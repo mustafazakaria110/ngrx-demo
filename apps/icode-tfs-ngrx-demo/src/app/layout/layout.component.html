@@ -1,0 +1,8 @@
+<div class="d-flex">
+    <lib-sidebar [sidebarList]="sidebarList"></lib-sidebar>
+    <div class="w-100 overflow-x-hidden " >
+        <lib-navbar [username]="username" [_imagePath]="_imageProfilePath" (logout)="logout()"></lib-navbar>
+        <div class="layout-content">
+        <router-outlet></router-outlet>
+        </div>
+    </div>

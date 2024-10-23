@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@icode-tfs-ngrx-demo/ui-common": ["libs/shared/ui-common/src/index.ts"],
       "@icode-tfs-ngrx-demo/util-authentication": [
         "libs/shared/util-authentication/src/index.ts"
       ]

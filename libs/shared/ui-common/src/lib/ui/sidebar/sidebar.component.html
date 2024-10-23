@@ -1,0 +1,32 @@
+<ul class="Sidebar collapse show" id="accordionSidebar" >
+    <a class="sidebar-brand" routerLink="/"> iCode Teaching Files </a>
+    <a class="sidebar-brand small" routerLink="/"> iCode TFS </a>
+    <hr class="sidebar-divider my-0" />
+    <div>
+        <li class="nav-item" id="{{ item.uniqueLabel }}"
+            *ngFor="let item of sidebarList ">
+            <a class="nav-link" [routerLink]="item.route" routerLinkActive="active" [class.collapsed]="item.collapsed"
+                data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + item.uniqueLabel" aria-expanded="true"
+                [attr.aria-controls]="'collapse' + item.uniqueLabel">
+                <i class="fa-solid {{item.icon}}"></i>
+                <span>{{ item.label }}</span><i class="fa-solid fa-chevron-down" *ngIf="item.arrowIcon"></i>
+            </a>
+            <ul id="collapse{{ item.uniqueLabel }}" [attr.data-bs-parent]="'#' + item.uniqueLabel"
+                class="ul-nav collapse" [class.show]="!item.collapsed" *ngIf="item.arrowIcon">
+                <li class="nav-item" *ngFor="let navItem of item.navItems">
+                    <a class="nav-link" [routerLink]="navItem.route" routerLinkActive="active">
+                        <i class="fa-solid {{ navItem.icon }}"></i>
+                        <span>{{ navItem.label }}</span></a>
+                </li>
+            </ul>
+        </li>
+    </div>
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0 mb-2 mt-4 collapsed" id="sidebarToggle" data-bs-toggle="collapse"
+            href="#accordionSidebar"></button>
+    </div>
+</ul>
+<button id="sidebarToggleTop" class="d-md-none rounded-circle collapsed" data-bs-toggle="collapse"
+    href="#accordionSidebar">
+    <i class="fa fa-bars"></i>
+</button>

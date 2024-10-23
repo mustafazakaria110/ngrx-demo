@@ -1,0 +1,98 @@
+.navbar {
+    height: 70px;
+    box-shadow: 0 0.15rem 3px var(--navbarBoxshadow);
+    background-color: var(--navbarBackground);
+    position: relative;
+    padding: 0.5rem 1rem;
+    z-index: 999;
+    flex-flow: row nowrap;
+  
+    .logos {
+      height: 60px;
+      padding: 8.5px 0;
+  
+      @media (max-width: 767.9px) {
+        margin-left: 30px;
+      }
+  
+      img {
+        max-height: 100%;
+      }
+    }
+    .themes_Icon {
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: var(--rightSideColor);
+    }
+    .user-img-fullname {
+      cursor: pointer;
+  
+      span {
+        color: var(--rightSideColor);
+        margin-right: 0.5rem;
+      }
+  
+      .img-profile {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+      }
+  
+      .dropdown-toggle::after {
+        display: none;
+      }
+  
+      .dropdown-menu {
+        left: auto;
+        right: 0;
+        top: 50px;
+        border: none;
+        background-color: var(--dorpdownBackground);
+        border-color: var(--dorpdownBackground);
+        .dropdown-item {
+          color: var(--rightSideColor);
+          &:hover {
+            background-color: var(--dropdownItemHover);
+            background-image: var(--gradient) !important;
+          }
+  
+          &:active {
+            background-color: var(--dropdownItemActive);
+          }
+  
+          i {
+            color: var(--dropdownIcon);
+            margin-right: 0.5rem;
+            font-size: 0.875em;
+          }
+        }
+      }
+    }
+  }
+  .logoutModal {
+    background-color: rgba(0,0,0,.25);
+    .modal-content {
+      background-color: var(--logoutModelBackgroundColor);
+    }
+    .modal-title {
+      font-family: calibri;
+      color: var(--logoutModelTitle);
+    }
+    .close {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--logoutModelTitle);
+      opacity: 0.5;
+      background: none;
+      cursor: pointer;
+      margin-left: auto;
+    }
+  
+    .close:hover {
+      color: var(--logoutModelTitle);
+      opacity: 1;
+    }
+  }
+  

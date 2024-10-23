@@ -1,0 +1,128 @@
+:root {
+  --controlBackground: #fff;
+  --controlTextColor: #6f7b8a;
+  --controlBorderColor: #d1d3e2;
+  --checkboxBackgroundColor: #7f97a2;
+  --IsInvalidBorderColor: #dc3545;
+  --mutliselectChipBackground: #e8ebee;
+  --mutliselectChipBorder: #6f7b8a;
+  --mutliselectChipHoverBackground: #efefef;
+}
+
+.dark_theme {
+  --controlBackground: #272727;
+  --controlTextColor: #fff;
+  --controlBorderColor: #272727;
+  --checkboxBackgroundColor: #272727;
+  --IsInvalidBorderColor: #dc3545;
+  --mutliselectChipBackground: #353535;
+  --mutliselectChipBorder: #4d4d4d;
+  --mutliselectChipHoverBackground: #4d4d4d;
+}
+
+.form-control,
+kendo-dropdownlist,
+kendo-numerictextbox,
+kendo-textbox {
+  padding: 0 6px !important;
+  height: 25px;
+  border-radius: 4px !important;
+  border: 1px solid var(--controlBorderColor) !important;
+  font-family: calibri;
+  font-size: 15px;
+  color: var(--controlTextColor) !important;
+  background-color: var(--controlBackground) !important;
+
+  &:focus,
+  &.k-focus,
+  &:focus-within {
+    box-shadow: none !important;
+    border-color: var(--controlBorderColor) !important;
+  }
+
+  .k-button-solid-base {
+    background-color: var(--controlBackground) !important;
+    color: var(--controlTextColor) !important;
+    width: 16px;
+  }
+
+  .k-input-inner {
+    padding: 0 !important;
+  }
+}
+
+kendo-dropdownlist,
+kendo-numerictextbox {
+  padding: 0 0 0 6px !important;
+  font-family: calibri !important;
+  font-size: 15px !important;
+}
+
+.k-grid {
+  kendo-dropdownlist,
+  kendo-numerictextbox {
+    display: flex;
+  }
+}
+
+.k-checkbox,
+.k-radio {
+  border-color: var(--controlBorderColor);
+  background-color: var(--controlBackground);
+
+  &:checked,
+  &.k-checked {
+    background-color: var(--checkboxBackgroundColor);
+    border-color: var(--controlBorderColor) !important;
+  }
+
+  &:focus,
+  &.k-focus {
+    box-shadow: none !important;
+    border-color: var(--controlBorderColor) !important;
+  }
+}
+
+.k-checkbox-label .k-label,
+.k-radio-label .k-label {
+  color: var(--controlTextColor);
+  cursor: pointer;
+  font-family: calibri;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+kendo-multiselect {
+  border-color: var(--controlBorderColor) !important;
+  background-color: var(--controlBackground) !important;
+  box-shadow: none !important;
+  color: var(--controlTextColor) !important;
+  font-family: calibri !important;
+  font-size: 15px !important;
+  border-radius: 4px !important;
+  height: 30px;
+  .k-input-inner {
+    padding-inline: 6px !important;
+    padding-block: 0px !important;
+  }
+
+  .k-chip-solid-base {
+    padding: 0 4px;
+    border-radius: 4px;
+    color: var(--controlTextColor);
+    background: var(--mutliselectChipBackground);
+    border-color: var(--mutliselectChipBorder);
+    font-size: 15px;
+    font-family: calibri;
+
+    &:hover,
+    &.k-hover {
+      background: var(--mutliselectChipHoverBackground);
+    }
+  }
+}
+
+.is-invalid,
+.is-invalid:focus {
+  border-color: var(--IsInvalidBorderColor) !important;
+}

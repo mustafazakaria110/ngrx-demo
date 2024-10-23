@@ -22,21 +22,43 @@
             "input": "apps/icode-tfs-ngrx-demo/public"
           }
         ],
-        "styles": ["apps/icode-tfs-ngrx-demo/src/styles.scss"],
-        "scripts": []
+        "styles": [
+          "node_modules/ngx-spinner/animations/ball-spin-clockwise.css",
+          "node_modules/@fortawesome/fontawesome-free/css/all.css",
+          "node_modules/@progress/kendo-theme-bootstrap/dist/all.scss",
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "apps/icode-tfs-ngrx-demo/src/styles.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/mainThemes.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/grid-style.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/buttons-style.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/form-controls-style.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/date-picker.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/groups.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/mobile-control.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/tag-input-style.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/validation-style.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/popup-style.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/viewer-style.scss",
+          "apps/icode-tfs-ngrx-demo/public/scss/k-animation-container.scss"
+          
+        ],
+    "scripts": [
+           "node_modules/@popperjs/core/dist/umd/popper.min.js",
+           "node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ]
       },
       "configurations": {
         "production": {
           "budgets": [
             {
               "type": "initial",
-              "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumWarning": "10mb",
+              "maximumError": "10mb"
             },
             {
               "type": "anyComponentStyle",
-              "maximumWarning": "2kb",
-              "maximumError": "4kb"
+              "maximumWarning": "10mb",
+              "maximumError": "10mb"
             }
           ],
           "outputHashing": "all"

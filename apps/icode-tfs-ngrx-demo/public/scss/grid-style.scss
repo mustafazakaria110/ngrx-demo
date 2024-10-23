@@ -1,0 +1,312 @@
+:root {
+  --gradient: none;
+  --tdTextColor: #576475;
+  --pagerControlBorder: #d1d3e2;
+  --thBackgroundColor: #7f97a2;
+  --thTextColor: rgba(255, 255, 255, 0.7);
+  --resizableBorderColor: #dee2e6;
+  --trevenBackground: #f5f5f5;
+  --trOddBackground: #fff;
+  --trHover: #ccc;
+  --tdOddBorder: #fff;
+  --tdEvenBorder: #eeeff2;
+  --tdHoverBorder: #ebebec;
+  --selectedRow: #b2c1c7;
+  --selectedRowBorder: #b2c1c7;
+  --pagerTextColor: rgba(255, 255, 255, 0.7);
+  --pageSelectedBackground: #7f97a2;
+  --groublingDragItem: #e4e7eb;
+  --groupingTdBorder: #f8f9fa;
+  --tdBorderWidth: 0 0 0px 0px;
+}
+
+.dark_theme {
+  --gradient: none,
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.117647) 0px,
+      rgba(255, 255, 255, 0.0784314) 50%,
+      rgba(255, 255, 255, 0.0470588) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  --kendoGridBackground: #4d4d4d;
+  --tdTextColor: #fff;
+  --pagerControlBorder: #272727;
+  --thBackgroundColor: #292525;
+  --fliterRowBackground: #4d4d4d;
+  --groupingBackground: #292525;
+  --thTextColor: #fff;
+  --resizableBorderColor: #272727;
+  --trevenBackground: #555;
+  --trOddBackground: #4d4d4d;
+  --trHover: #787878;
+  --tdOddBorder: #2a2a2a;
+  --tdEvenBorder: #2a2a2a;
+  --tdHoverBorder: #2a2a2a;
+  --selectedRow: #56946c;
+  --selectedRowBorder: #2a2a2a;
+  --pagerBackground: #292525;
+  --pagerTextColor: #fff;
+  --pageSelectedBackground: #56946c;
+  --pagerIconColor: #fff;
+  --groublingDragItem: #272727;
+  --groupingTdBorder: #272727;
+  --groupingChipsBackground: #353535;
+  --groupingChipsBorder: #272727;
+  --tdBorderWidth: 0 0 1px 1px;
+}
+
+kendo-grid {
+  border-radius: 4px;
+  background-color: var(--kendoGridBackground) !important;
+
+  .k-grid-aria-root {
+    border-radius: 3px 3px 0 0;
+  }
+
+  .k-grid-header {
+    border-color: var(--tdEvenBorder);
+    background-color: var(--fliterRowBackground);
+  }
+
+  .k-grid-header-wrap {
+    .k-table-thead {
+      border-color: var(--resizableBorderColor);
+
+      .k-table-th {
+        padding-block: 0.5rem;
+        padding-inline: 0.5rem;
+        background-color: var(--thBackgroundColor);
+        background-image: var(--gradient);
+        color: var(--thTextColor);
+        font-weight: 600;
+        font-size: 15px;
+        font-family: calibri;
+        border-bottom: 0;
+
+        .k-cell-inner .k-link {
+          padding-block: 4px;
+          padding-inline: 8px;
+
+          .k-sort-icon {
+            margin-left: 0;
+            color: var(--thTextColor);
+          }
+        }
+      }
+    }
+
+    .k-filter-row {
+      background-color: var(--fliterRowBackground);
+
+      .k-table-td {
+        padding: 2px 2px !important;
+        border-color: var(--tdEvenBorder);
+        background-color: var(--fliterRowBackground) !important;
+      }
+    }
+  }
+
+  .k-grid-content {
+    tr {
+      cursor: pointer;
+
+      .k-touch-action-auto {
+        i {
+          color: var(--tdTextColor);
+        }
+      }
+
+      td {
+        font-family: calibri;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--tdTextColor) !important;
+        padding: 1px 8px !important;
+        border-color: var(--tdOddBorder) !important;
+        background-color: var(--trOddBackground) !important;
+        border-width: var(--tdBorderWidth) !important;
+      }
+
+      &.k-alt {
+        background-color: var(--trevenBackground);
+
+        td {
+          border-color: var(--tdEvenBorder) !important;
+          background-color: var(--trevenBackground) !important;
+        }
+      }
+
+      &:hover {
+        td {
+          background-image: var(--gradient);
+          background-color: var(--trHover) !important;
+          border-color: var(--tdHoverBorder) !important;
+        }
+      }
+
+      .k-group-cell {
+        border-color: var(--groupingTdBorder) !important;
+        & + td {
+          border-color: var(--groupingTdBorder) !important;
+        }
+      }
+
+      &.k-selected {
+        background-color: var(--selectedRow) !important;
+
+        td {
+          background-image: var(--gradient) !important;
+          background-color: var(--selectedRow) !important;
+          border-color: var(--selectedRowBorder) !important;
+        }
+      }
+    }
+  }
+
+  kendo-grid-group-panel {
+    padding: 0 !important;
+    border-radius: 4px 4px 0 0;
+    background-color: var(--groupingBackground) !important;
+    background-image: var(--gradient);
+
+    .k-chip-solid-base {
+      padding: 0 4px;
+      border-radius: 4px;
+      color: var(--tdTextColor);
+      background-color: var(--groupingChipsBackground) !important;
+      border-color: var(--groupingChipsBorder) !important;
+
+      &:nth-child(1) {
+        margin-left: 6px;
+      }
+
+      .k-chip-content {
+        font-size: 15px;
+        font-family: calibri;
+        font-weight: 600;
+      }
+
+      .k-chip-actions {
+        .k-chip-action {
+          display: none;
+
+          &.k-chip-remove-action {
+            display: block;
+            padding: 0;
+            margin-top: -30%;
+          }
+        }
+      }
+    }
+
+    .k-grouping-drop-container {
+      font-family: calibri;
+      font-size: 15px;
+      padding-inline: 8px;
+      color: var(--tdTextColor);
+    }
+
+    & + .k-grid-aria-root {
+      border-radius: 0;
+    }
+  }
+
+  kendo-pager {
+    background-image: var(--gradient);
+    padding-block: 0 !important;
+    border-radius: 0 0 4px 4px;
+    background-color: var(--pagerBackground) !important;
+
+    &:focus {
+      box-shadow: none !important;
+    }
+
+    .k-pager-numbers .k-selected {
+      background-color: var(--pageSelectedBackground) !important;
+
+      .k-button-text {
+        color: var(--pagerTextColor) !important;
+      }
+    }
+
+    .k-label {
+      font-family: calibri;
+      font-size: 15px;
+      color: var(--pagerTextColor) !important;
+    }
+
+    kendo-numerictextbox {
+      padding: 0;
+      font-size: 15px;
+      height: 25px;
+      color: var(--pagerTextColor) !important;
+      border-color: var(--pagerControlBorder) !important;
+
+      &.k-focus {
+        box-shadow: none !important;
+        border-color: var(--pagerControlBorder) !important;
+      }
+
+      .k-pager-nav {
+        padding: 0 6px !important;
+      }
+    }
+
+    kendo-dropdownlist,
+    .k-dropdown-list {
+      background-color: var(--tdOddBorder) !important;
+      height: 25px;
+      border-color: var(--pagerControlBorder) !important;
+
+      &.k-focus {
+        box-shadow: none !important;
+        border-color: var(--pagerControlBorder) !important;
+      }
+
+      span.k-input-inner {
+        padding: 0 6px !important;
+        color: var(--pagerTextColor) !important;
+        font-size: 15px !important;
+      }
+
+      .k-icon-button {
+        padding: 0 !important;
+      }
+    }
+
+    select.k-dropdown-list {
+      padding: 0 6px;
+      margin-top: 6px;
+      color: var(--tdTextColor) !important;
+    }
+  }
+
+  .k-button-text,
+  .k-button-icon {
+    opacity: 0.65 !important;
+    color: var(--pagerIconColor);
+  }
+
+  kendo-grid-filter-cell-operators {
+    display: none;
+  }
+}
+
+.k-grouping-dropclue {
+  display: none !important;
+}
+
+.k-header.k-drag-clue {
+  .k-svg-i-unlock {
+    display: none !important;
+  }
+
+  border-color: var(--groublingDragItem);
+  color: var(--tdTextColor);
+  background-color: var(--groublingDragItem);
+  padding: 0px 4px;
+  font-size: 15px;
+  font-family: calibri;
+  font-weight: 600;
+}

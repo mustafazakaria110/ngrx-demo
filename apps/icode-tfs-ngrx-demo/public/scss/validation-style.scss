@@ -1,0 +1,27 @@
+:root {
+  --textInvalidBackground: #fff;
+  --textInvalidBoxshadow: grey;
+  --textInvalidColor: #dc3545;
+}
+.dark_theme {
+  --textInvalidBackground: #272727;
+  --textInvalidBoxshadow: #4d4d4d;
+  --textInvalidColor: #dc3545;
+}
+.text-invalid {
+  background: var(--textInvalidBackground);
+  border-radius: 8px;
+  padding: 0px;
+  position: absolute;
+  z-index: 99;
+  top: -27px;
+  left: 50%;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 5px var(--textInvalidBoxshadow);
+  font-weight: bold;
+  .text-danger {
+    color: var(--textInvalidColor);
+    padding: 2px 10px;
+  }
+}

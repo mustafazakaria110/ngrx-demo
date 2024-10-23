@@ -1,0 +1,78 @@
+:root {
+  --gradient: none;
+  --titleColor: rgba(255, 255, 255, 0.7);
+  --titleBackground: #7f97a2;
+  --labelTextColor: #6f7b8a;
+  --popupBodyBackground: #fff;
+}
+.dark_theme {
+  --gradient: none,
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.117647) 0px,
+      rgba(255, 255, 255, 0.0784314) 50%,
+      rgba(255, 255, 255, 0.0470588) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  --titleColor: #fff;
+  --titleBackground: #272727;
+  --labelTextColor: #fff;
+  --popupBodyBackground: #504e4e;
+}
+
+kendo-dialog {
+  font-family: calibri;
+
+  .k-window {
+    border: none !important;
+    background-color: var(--popupBodyBackground) !important;
+  }
+
+  kendo-dialog-titlebar {
+    padding: 3px 0 2px 12px;
+    color: var(--titleColor);
+    background: var(--gradient) !important;
+    background-color: var(--titleBackground) !important;
+    height: 30px;
+    padding: 15px !important;
+    border: none !important;
+
+    .k-window-title {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .k-button::after,
+    .k-button::before {
+      display: none !important;
+    }
+  }
+
+  .k-window-content {
+    padding-bottom: 0.5rem;
+    .lbl {
+      font-weight: bold;
+      color: var(--labelTextColor) !important;
+      font-size: 15px;
+      font-family: calibri;
+
+      .text-danger {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .k-dialog-actions {
+    border: none !important;
+    padding-bottom: 1rem;
+
+    .btn-icode {
+      max-width: fit-content !important;
+      margin: auto;
+    }
+  }
+
+  .k-dialog-wrapper {
+    z-index: 12003;
+  }
+}

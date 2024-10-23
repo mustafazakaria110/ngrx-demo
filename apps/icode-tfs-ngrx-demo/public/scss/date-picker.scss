@@ -1,0 +1,117 @@
+:root {
+  --datepickerBackground: #fff;
+  --selectedFilterBackground: #7f97a2;
+  --selectedfilterColor: rgba(255, 255, 255, 0.9);
+  --leftFilterColor: #576475;
+  --daysColor: #333;
+  --ClearBtnBackground: #ddd;
+  --inRangeBackground: #ddd;
+}
+.dark_theme {
+  --datepickerBackground: #353535;
+  --selectedFilterBackground: #272727;
+  --selectedfilterColor: rgba(255, 255, 255, 0.9);
+  --leftFilterColor: #fff;
+  --daysColor: #fff;
+  --ClearBtnBackground: #4d4d4d;
+  --inRangeBackground: #4d4d4d;
+}
+.md-drppicker {
+  background-color: var(--datepickerBackground) !important;
+  width: 610px !important;
+  .ranges {
+    ul li {
+      &:hover {
+        background-color: var(--inRangeBackground) !important;
+      }
+      font-size: 15px;
+      font-family: calibri;
+      button {
+        font-size: 15px;
+        color: var(--leftFilterColor) !important;
+        &.active {
+          background-color: var(--selectedFilterBackground) !important;
+          color: var(--selectedfilterColor) !important;
+        }
+      }
+    }
+  }
+  .calendar {
+    font-family: calibri;
+    font-size: 15px;
+    color: var(--leftFilterColor) !important;
+    .calendar-table {
+      background-color: var(--datepickerBackground) !important;
+    }
+    .week-days th,
+    .month {
+      color: var(--daysColor) !important;
+    }
+    td.available:not(.off) {
+      color: var(--leftFilterColor);
+      &.active,
+      &.active:hover {
+        background-color: var(--selectedFilterBackground) !important;
+        color: var(--selectedfilterColor) !important;
+      }
+      &.in-range,
+      &.available:hover {
+        background-color: var(--inRangeBackground);
+      }
+    }
+    td.off {
+      background-color: var(--datepickerBackground) !important;
+    }
+    .drp-animate,
+    .table-condensed {
+      tr:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+  .buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    .btn {
+      background-color: var(--selectedFilterBackground) !important;
+      padding: 5px 10px !important;
+      height: auto !important;
+      line-height: 1 !important;
+      width: 60px !important;
+      color: var(--selectedfilterColor) !important;
+      border: 1px solid var(--selectedFilterBackground) !important;
+      box-shadow: none !important;
+      font-family: calibri;
+      font-size: 15px;
+      &.clear {
+        color: var(--daysColor) !important;
+        background-color: var(--ClearBtnBackground) !important;
+        margin-right: 0.5rem;
+        text-transform: capitalize;
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 991.9px) {
+    max-height: 300px !important;
+    max-width: 300px !important;
+    overflow: auto !important;
+    .calendar {
+      clear: none !important;
+      float: none !important;
+    }
+    .buttons {
+      position: relative;
+      text-align: left !important;
+    }
+  }
+}
+
+.k-grid .md-drppicker {
+  position: fixed;
+  margin-top: 2px;
+  width: 625px !important;
+}

@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@icode-tfs-ngrx-demo/util-authentication": [
+        "libs/shared/util-authentication/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

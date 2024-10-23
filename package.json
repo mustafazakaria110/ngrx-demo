@@ -2,7 +2,10 @@
   "name": "@icode-tfs-ngrx-demo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve icode-tfs-ngrx-demo --configuration=development"
+  },
+  
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.2.0",

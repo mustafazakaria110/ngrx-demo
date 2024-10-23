@@ -1,0 +1,91 @@
+:root {
+  --tagInputBackground: #fff;
+  --tagInputBorder: #d1d3e2;
+  --tagInputColor: #6f7b8a;
+  --tagInputChipBackground: #e8ebee;
+  --tagInputChipBorder: #6f7b8a;
+  --tagInputChipHoverBackground: #efefef;
+}
+.dark_theme {
+  --tagInputBackground: #272727;
+  --tagInputBorder: #272727;
+  --tagInputColor: #fff;
+  --tagInputChipBackground: #e8ebee;
+  --tagInputChipBorder: #6f7b8a;
+  --tagInputChipHoverBackground: #efefef;
+}
+tag-input {
+  background-color: #272727;
+  border-radius: 4px;
+  padding: 3px 6px;
+  max-height: 100px;
+  overflow: auto;
+  border: 1px solid #272727;
+
+  .ng2-tag-input {
+    min-height: 24px !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+
+    &.ng2-tag-input--focused {
+      border-bottom: none !important;
+    }
+  }
+
+  .ng2-tag-input__text-input {
+    background-color: #272727;
+    height: 23px !important;
+    color: #fff;
+    font-family: calibri !important;
+    font-size: 15px !important;
+    padding: 0 !important;
+  }
+
+  .ng2-tags-container tag {
+    background-color: #353535 !important;
+    border: 1px solid #4d4d4d !important;
+    color: #fff !important;
+    font-family: calibri;
+    font-size: 15px;
+    padding: 0 2px 0 6px;
+    border-radius: 4px;
+    height: 20px;
+    box-shadow: none !important;
+    line-height: 1 !important;
+    transition: none !important;
+    transform: none !important;
+
+    &:hover {
+      background-color: #4d4d4d !important;
+    }
+
+    .tag-wrapper {
+      height: 20px;
+      display: flex;
+      align-items: center;
+
+      delete-icon {
+        margin-left: 4px !important;
+        width: auto !important;
+
+        &:hover {
+          transform: none !important;
+        }
+
+        svg {
+          vertical-align: baseline;
+          height: 10px;
+          width: 10px;
+        }
+
+        path {
+          fill: #fff !important;
+        }
+      }
+    }
+  }
+
+  tag-ripple {
+    display: none !important;
+  }
+}

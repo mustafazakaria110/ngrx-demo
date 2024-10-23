@@ -1,0 +1,58 @@
+:root {
+  --k-popupBorderColor: rgba(33, 37, 41, 0.13);
+  --k-listBackground: #fff;
+  --k-listTextColor: #576475;
+  --k-listHoverBackground: #e4e7eb;
+  --k-listSelectedBackground: rgba(33, 37, 41, 0.13);
+}
+.dark_theme {
+  --k-popupBorderColor: #272727;
+  --k-listBackground: #4d4d4d;
+  --k-listTextColor: #fff;
+  --k-listHoverBackground: #353535;
+  --k-listSelectedBackground: #272727;
+}
+.k-animation-container {
+  .k-popup {
+    overflow: hidden;
+    border-color: var(--k-popupBorderColor) !important;
+    .k-list {
+      background-color: var(--k-listBackground);
+      color: var(--k-listTextColor) !important;
+      font-family: calibri;
+      font-size: 15px;
+      .k-list-item:focus,
+      .k-list-optionlabel:focus,
+      .k-list-item.k-focus,
+      .k-focus.k-list-optionlabel {
+        box-shadow: none;
+      }
+      .k-list-item:hover,
+      .k-list-optionlabel:hover,
+      .k-list-item.k-hover,
+      .k-hover.k-list-optionlabel {
+        color: var(--k-listTextColor);
+        background-color: var(--k-listHoverBackground);
+      }
+      .k-list-item.k-selected,
+      .k-selected.k-list-optionlabel {
+        color: var(--k-listTextColor) !important;
+        background-color: var(--k-listSelectedBackground) !important;
+      }
+    }
+    .k-no-data,
+    .k-nodata {
+      background-color: var(--k-listBackground);
+      color: var(--k-listTextColor) !important;
+      font-size: 15px;
+      font-family: calibri;
+      text-transform: lowercase;
+      min-height: 30px;
+      max-height: 30px;
+      div:nth-child(1):first-letter,
+      div:nth-child(1):first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

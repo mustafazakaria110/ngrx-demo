@@ -1,0 +1,70 @@
+:root {
+  --itiBorder: #d1d3e2;
+  --itiBackground: #fff;
+  --itiColor: #6f7b8a;
+  --itiPlacholderColor: rgba(85, 85, 85, 0.7);
+  --itiListBackground: #fff;
+  --k-listHoverBackground: #e4e7eb;
+  --k-listSelectedBackground: rgba(33, 37, 41, 0.13);
+}
+.dark_theme {
+  --itiBorder: #272727;
+  --itiBackground: #272727;
+  --itiColor: #fff;
+  --itiPlacholderColor: rgba(255, 255, 255, 0.7);
+  --itiListBackground: #4d4d4d;
+  --k-listHoverBackground: #353535;
+  --k-listSelectedBackground: #272727;
+}
+ngx-intl-tel-input {
+  display: block;
+  height: 25px;
+  width: 100%;
+  .iti.iti--allow-dropdown {
+    width: 100%;
+    height: 100%;
+    input[type='tel'] {
+      border: 1px solid var(--itiBorder) !important;
+      border-radius: 4px !important;
+      color: var(--itiColor) !important;
+      background-color: var(--itiBackground);
+      outline: none !important;
+      width: 100%;
+      height: 100%;
+      &::placeholder {
+        color: var(--itiPlacholderColor) !important;
+      }
+    }
+    .iti__arrow {
+      border-top: 4px solid var(--itiPlacholderColor) !important;
+    }
+    .dropdown-menu,
+    .search-container input {
+      color: var(--itiColor) !important;
+      outline: none !important;
+      border-color: var(--itiBorder);
+      background-color: var(--itiListBackground);
+      font-size: 15px;
+      &::placeholder {
+        color: var(--itiColor) !important;
+      }
+    }
+    .dropdown-menu {
+      width: 250px !important;
+    }
+    .iti__country-list {
+      background-color: var(--itiListBackground);
+      white-space: wrap;
+      li.iti__country:hover {
+        background-color: var(--k-listHoverBackground);
+      }
+    }
+    .iti__country-name {
+      font-family: calibri;
+      font-size: 15px;
+    }
+    .iti__dial-code {
+      color: var(--itiColor) !important;
+    }
+  }
+}

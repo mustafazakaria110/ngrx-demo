@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: calibri;
+    font-size: 15px;
+    color: var(--mainColor);
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      &:focus-visible {
+        box-shadow: none;
+      }
+    }
+    img {
+      max-height: 100%;
+    }
+    ul {
+      list-style: none;
+    }
+  }
+  .modal-backdrop{
+    display: none;
+  }
+  

@@ -1,0 +1,51 @@
+:root {
+  --gradient: none;
+  --btnIcodeBorder: #5e5e5e;
+  --btnIcodeColor: #495057;
+  --btnIcodeBackground: #d1dade;
+  --btnIcodeHoverBackground: #bfccd1;
+  --btnIcodeGridBackground: #d1dade;
+  --btnIcodeGridHoverBackground: #bfccd1;
+}
+.dark_theme {
+  --gradient: none,
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.117647) 0px,
+      rgba(255, 255, 255, 0.0784314) 50%,
+      rgba(255, 255, 255, 0.0470588) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  --btnIcodeBorder: #212121;
+  --btnIcodeColor: #f8f9fa;
+  --btnIcodeBackground: #272727;
+  --btnIcodeHoverBackground: #454545;
+  --btnIcodeGridBackground: #353535;
+  --btnIcodeGridHoverBackground: #454545;
+}
+.btn-icode {
+  border: 1px solid var(--btnIcodeBorder) !important;
+  color: var(--btnIcodeColor) !important;
+  background-color: var(--btnIcodeBackground) !important;
+  font-weight: normal !important;
+  font-size: 15px !important;
+  font-family: calibri !important;
+  padding: 4px 10px !important;
+  line-height: 1 !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  height: 25px !important;
+  box-shadow: none !important;
+  &:hover {
+    background-color: var(--btnIcodeHoverBackground) !important;
+    border-color: var(----btnIcodeHoverBackground);
+    background-image: var(--gradient) !important;
+  }
+}
+.k-grid .btn-icode {
+  margin-block: 2px;
+  background-color: var(--btnIcodeGridBackground) !important;
+  &:hover {
+    background-color: var(--btnIcodeGridHoverBackground) !important;
+  }
+}

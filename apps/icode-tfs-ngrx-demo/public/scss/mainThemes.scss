@@ -1,0 +1,120 @@
+:root {
+  --mainColor: #6f7b8a;
+  --gradient: none;
+  /*Layout*/
+  --layoutBackgroundColor: #f8f9fc;
+  /*Layout*/
+  /*Navbar*/
+  --navbarBoxshadow: rgba(58, 59, 69, 0.15);
+  --navbarBackground: #fff;
+  --rightSideColor: #858796;
+  --dropdownIcon: #d1d3e2;
+  --dropdownItemActive: #f8f9fc;
+  --dorpdownBackground: #fff;
+  --dropdownItemHover: #f8f9fa;
+  --logoutModelTitle: #6f7b8a;
+  --logoutModelBackgroundColor: #fff;
+  /*Navbar*/
+  /*sidebar*/
+  --sidebarBackground: #22262e;
+  --scrollbar-track: #eee;
+  --scrollbar-thumb: #888;
+  --scrollbar-thumbHover: #555;
+  --sidebarBrandColor: #eee;
+  --sidebar-divider: rgba(255, 255, 255, 0.5);
+  --sidebarnav-link-Color: rgba(255, 255, 255, 0.8);
+  --sidebarnav-link-iconColor: rgba(255, 255, 255, 0.3);
+  --sidebarnav-link-downIconColor: rgba(255, 255, 255, 0.7);
+  --sidebarItemActiveBackground: #7f97a2;
+  --sidebarItemActiveColor: #eee;
+  --sidebarItemHoverColor: #fff;
+  --sidebarToggleTopIocnColor: #576475;
+  --sidebarToggleTopIocnHoverBackground: #eaecf4;
+  --sidebarToggleBackground: rgba(255, 255, 255, 0.2);
+  --sidebarToggleHoverBackground: rgba(255, 255, 255, 0.25);
+  --sidebarToggleAfterColor: rgba(255, 255, 255, 0.5);
+  /*sidebar*/
+  /*Persiset Loyout*/
+  --PersisetButnsBackground: #f8f9fc;
+  --PersisetButnsBoxshadow: #7f97a2;
+  --pageTitleColor: #6f7b8a;
+  /*Persiset Loyout*/
+}
+
+.dark_theme {
+  --mainColor: #fff;
+  --gradient: none,
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.117647) 0px,
+      rgba(255, 255, 255, 0.0784314) 50%,
+      rgba(255, 255, 255, 0.0470588) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  /*Layout*/
+  --layoutBackgroundColor: #353535;
+  /*Layout*/
+  /*Navbar*/
+  --navbarBoxshadow: rgb(255 255 255 / 15%);
+  --navbarBackground: #353535;
+  --rightSideColor: #fff;
+  --dropdownIcon: #fff;
+  --dorpdownBackground: #4d4d4d;
+  --dropdownItemActive: #272727;
+  --dropdownItemHover: #787878;
+  --logoutModelTitle: #fff;
+  --logoutModelBackgroundColor: #353535;
+  /*Navbar*/
+  /*sidebar*/
+  --sidebarBackground: #272727;
+  --scrollbar-track: #272727;
+  --scrollbar-thumb: #4d4d4d;
+  --scrollbar-thumbHover: #4d4d4d;
+  --sidebarBrandColor: #fff;
+  --sidebar-divider: rgba(255, 255, 255, 0.5);
+  --sidebarnav-link-Color: rgba(255, 255, 255, 0.8);
+  --sidebarnav-link-iconColor: rgba(255, 255, 255, 0.3);
+  --sidebarnav-link-downIconColor: rgba(255, 255, 255, 0.7);
+  --sidebarItemActiveBackground: #56946c;
+  --sidebarItemHoverColor: #fff;
+  --sidebarItemActiveColor: #fff;
+  --sidebarToggleTopIocnColor: #fff;
+  --sidebarToggleTopIocnHoverBackground: #4d4d4d;
+  --sidebarToggleBackground: #353535;
+  --sidebarToggleHoverBackground: rgba(255, 255, 255, 0.25);
+  --sidebarToggleAfterColor: #fff;
+  /*sidebar*/
+  /*Persiset Loyout*/
+  --PersisetButnsBackground: #353535;
+  --PersisetButnsBoxshadow: #fff;
+  --pageTitleColor: #fff;
+  /*Persiset Loyout*/
+}
+/**Persiset Layout**/
+.page_butns {
+  background: var(--PersisetButnsBackground);
+  height: 55px;
+  box-shadow: 1px 1px 5px var(--PersisetButnsBoxshadow);
+  margin: 0 -0.5rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(8px);
+  button {
+    width: 62px;
+    margin-inline: 2px;
+  }
+}
+.Page_Layout {
+  height: calc(100vh - 141px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  .Page_Title h5 {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--pageTitleColor);
+  }
+}
+/**Persiset Layout**/

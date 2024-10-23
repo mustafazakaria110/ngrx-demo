@@ -15,6 +15,7 @@
     ],
     "sharedGlobals": []
   },
+  "defaultProject": "icode-tfs-ngrx-demo",
   "targetDefaults": {
     "@angular-devkit/build-angular:application": {
       "cache": true,
@@ -50,6 +51,14 @@
       "linter": "eslint",
       "style": "scss",
       "unitTestRunner": "jest"
+    },
+    "@nx/angular:component": {
+      "style": "scss"
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "style": "scss"
     }
   }
 }

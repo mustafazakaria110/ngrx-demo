@@ -82,8 +82,7 @@
               "RelativeToolTip": "APIs\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-24T09:44:03.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T09:44:03.701Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "APIs\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:46:00.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:46:00.528Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "Infrastructure\\InfrastructureServiceRegistration.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAADgvxgAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:43:45.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:43:45.348Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\AuthenticationRepository.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAuwA8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:43:04.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:43:04.609Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "RelativeToolTip": "Core\\Application\\Models\\AuthenticationUserModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:38:46.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:38:46.834Z"
             },
             {
               "$type": "Document",
@@ -147,8 +142,7 @@
               "RelativeToolTip": "Core\\Domain\\Entities\\User.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:38:12.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:38:12.607Z"
             },
             {
               "$type": "Document",
@@ -160,8 +154,7 @@
               "RelativeToolTip": "Core\\Application\\Profiles\\MappingProfiles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAiwAoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:37:10.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:37:10.184Z"
             },
             {
               "$type": "Document",
@@ -173,8 +166,7 @@
               "RelativeToolTip": "Core\\Application\\ApplicationServiceRegistration.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAADgvwsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:33:40.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:33:40.986Z"
             },
             {
               "$type": "Document",
@@ -186,8 +178,7 @@
               "RelativeToolTip": "Core\\Application\\Features\\Authentication\\Login\\LoginCommandHandler.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAwwBEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:16:45.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:16:45.057Z"
             },
             {
               "$type": "Document",
@@ -199,8 +190,7 @@
               "RelativeToolTip": "Core\\Application\\Features\\Authentication\\Login\\LoginCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:16:13.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:16:13.952Z"
             },
             {
               "$type": "Document",
@@ -212,8 +202,7 @@
               "RelativeToolTip": "Core\\Application\\Contracts\\Authentication\\ITokenHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:15:08.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:15:08.018Z"
             },
             {
               "$type": "Document",
@@ -225,8 +214,7 @@
               "RelativeToolTip": "Core\\Application\\Contracts\\Authentication\\IAuthenticationRepository.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAEwA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:13:34.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:13:34.278Z"
             },
             {
               "$type": "Document",
@@ -238,8 +226,7 @@
               "RelativeToolTip": "APIs\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:06:06.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:06:06.637Z"
             },
             {
               "$type": "Document",
@@ -249,7 +236,7 @@
               "RelativeDocumentMoniker": "APIs\\Controllers\\AuthenticationController.cs",
               "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "APIs\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAAC4AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T08:04:28.012Z",
               "EditorCaption": ""

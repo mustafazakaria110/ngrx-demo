@@ -3,45 +3,38 @@ import { createReducer, on } from '@ngrx/store';
 import { login, loginFail, loginSuccess, logout } from './auth.actions';
 
 export interface AuthState {
-  username: string | null;
-  role: string | null; // Ensure the role is properly typed
+  userName: string | null;
+  userRole: string | null; // Ensure the role is properly typed
   authenticated:boolean | null;
-  token:string | null;
+  userToken:string | null;
 }
 
 export const initialState: AuthState = {
-  username: null,
-  role: null,
+  userName: 'sara',
+  userRole: null,
   authenticated: null,
-  token : null
+  userToken : null
 };
-
-// Define your users array here
-const users = [
-  { id: 1, username: 'admin', role: 'admin' },
-  { id: 2, username: 'user', role: 'user' },
-  { id: 3, username: 'jane', role: 'user' },
-];
 
 export const authReducer = createReducer(
   initialState,
-  on(loginSuccess, (state) => {
+  on(loginSuccess, (state,{data}) => {
     return { 
-      ...state, 
-      //username: data?.username || null, 
-      //role: data.role == 1 ?  'admin' : 'user', // Explicitly cast the role,
-      authenticated : true ,
-      token :"abc"
+      ...state,
+        userName: data.userName , 
+        userRole: data.userRole,
+        authenticated : true ,
+        userToken :data.userToken
     };
   }),
   on(loginFail, (state) => {
     return { 
       ...state, 
-      username: null,
-      role: null,
-      token:null,
+      userName: null,
+      userRole: null,
+      userToken:null,
       authenticated : false
     };
   }),
-  on(logout, (state) => ({ ...state, username: null, role: null })),
+  on(logout, (state) => ({ ...state, userName: null, userRole: null })),
 );

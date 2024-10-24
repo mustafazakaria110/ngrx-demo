@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import { EffectsModule, provideEffects } from '@ngrx/effects';
 import { AuthenticationEffects } from '../../domain/state/auth.effects';
 import { AuthService } from '../../domain/services/authentication.service';
+// import { authenticatedUser } from '../../domain/state/auth.selectors';
 
 
 @Component({
@@ -23,22 +24,18 @@ export class LoginComponent {
   message = '';
   username: string = '';
   password: string = '';
+  isAuthenticated$:any;
 
-  constructor(private store: Store<{ auth: AuthState }>, private router: Router,) {}
+  constructor( private store2: Store , private store: Store<{ auth: AuthState }>, private router: Router,) {
+     
+    
+
+  }
 
   onLogin() {
+
     this.store.dispatch(login({ username: this.username , password:this.password }));
-    // Navigate after a short delay to allow the state to update
-    // this.store.select('auth').subscribe(AuthState => {
-    //   if (AuthState.role === 'admin') {
-    //     this.router.navigate(['/admin/users']);
-    //   } else if (AuthState.role === 'user') {
-    //     this.router.navigate(['/users']);
-    //   }
-    //   else{
-    //     this.message = 'Invalid username or password.';
-    //   }
-    // });
+
   }
 
 }

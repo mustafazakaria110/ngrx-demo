@@ -31,7 +31,7 @@ export const appConfig: ApplicationConfig = {
       BrowserAnimationsModule,
       FormsModule,
       StoreModule.forRoot(
-        { pacsurls: pacsReducer },
+        { pacsurls: pacsReducer, auth: authReducer },
       ),
     
     )

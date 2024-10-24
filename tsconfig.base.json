@@ -33,6 +33,9 @@
       "@icode-tfs-ngrx-demo/user-ui": ["libs/users/ui/src/index.ts"],
       "@icode-tfs-ngrx-demo/util-authentication": [
         "libs/shared/util-authentication/src/index.ts"
+      ],
+      "@icode-tfs-ngrx-demo/util-common": [
+        "libs/shared/util-common/src/index.ts"
       ]
     }
   },

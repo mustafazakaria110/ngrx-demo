@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\apis\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -100,12 +100,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "InfrastructureServiceRegistration.cs",
               "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\InfrastructureServiceRegistration.cs",
               "RelativeDocumentMoniker": "Infrastructure\\InfrastructureServiceRegistration.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\InfrastructureServiceRegistration.cs*",
-              "RelativeToolTip": "Infrastructure\\InfrastructureServiceRegistration.cs*",
+              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\InfrastructureServiceRegistration.cs",
+              "RelativeToolTip": "Infrastructure\\InfrastructureServiceRegistration.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAADgvxgAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T08:43:45.348Z",
@@ -243,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "APIs\\Controllers\\AuthenticationController.cs",

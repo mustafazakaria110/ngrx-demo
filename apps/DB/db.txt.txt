@@ -1,0 +1,17 @@
+
+CREATE TABLE IF NOT EXISTS public.users
+(
+    id bigserial,
+    username character varying ,
+    password character varying ,
+    fullname character varying ,
+    userrole integer,
+    imageurl character varying,
+    pacsusername character varying,
+    risuserid character varying,
+    institutionid bigint,
+    isactive boolean DEFAULT true
+);
+INSERT INTO public.users(	username, password,
+	fullname	, userrole, imageurl, isactive)
+	VALUES ('powerAdmin','123456','power admin', 1,'',true);

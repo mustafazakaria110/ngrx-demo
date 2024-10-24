@@ -1,0 +1,6 @@
+@DemoApis_HostAddress = http://localhost:5170
+
+GET {{DemoApis_HostAddress}}
+Accept: application/json
+
+###

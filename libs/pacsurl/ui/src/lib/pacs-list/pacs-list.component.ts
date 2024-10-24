@@ -35,7 +35,7 @@ parameterComponent:boolean=false;
   }
   onShowParameter(pacsId: any) {
     debugger
-    //this.showParameter.emit(pacsId);
+    this.showParameter.emit(pacsId);
     this.parameterComponent=true;
     this.Selectedpacs=pacsId;
   }

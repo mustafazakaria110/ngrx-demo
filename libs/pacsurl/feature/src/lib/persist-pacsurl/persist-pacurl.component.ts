@@ -18,6 +18,7 @@ export class PersistPacsurlComponent implements OnInit
   PacsForm: FormGroup;
   isEdit = false; // Flag to determine if it's edit mode
   pacsid: number | null = null;
+  editedpacs:any
 
   constructor(
     private fb: FormBuilder,
@@ -36,15 +37,16 @@ export class PersistPacsurlComponent implements OnInit
       this.pacsid = params['id'];
       if (this.pacsid) {
         this.isEdit = true;  
-        this.loadUserData(this.pacsid);  
+        this.loadPacsData(this.pacsid);  
       }
     });
 
   }
   
-  loadUserData(pacsId: number) {
+  loadPacsData(pacsId: number) {
     this.store.select(selectPacsById(pacsId)).subscribe(pacsurl => {
       if (pacsurl) {
+        this.editedpacs=pacsurl;
         this.PacsForm.patchValue(pacsurl);
       }
     });
@@ -55,11 +57,12 @@ export class PersistPacsurlComponent implements OnInit
     if (this.PacsForm.valid) {
       const pacsData = {
         ...this.PacsForm.value,
-        id: this.isEdit ? this.pacsid : new Date().getTime()
+       
       };
 
       if (this.isEdit) {
         debugger
+        pacsData.id=  this.pacsid;
         this.store.dispatch(editpacsurl({ pacsurl: pacsData }));
       } else {
         this.store.dispatch(addpacsurl({ pacsurl: pacsData }));

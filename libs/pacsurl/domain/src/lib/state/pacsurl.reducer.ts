@@ -8,12 +8,12 @@ export interface PacsurlState {
 
 const initialState: PacsurlState = {
   pacsurls: [
-    { id: 1, name: 'Admin', url: 'admin@mail.com' },
-    { id: 2, name: 'Mostafa', url: 'mostafa@mail.com' },
-    { id: 3, name: 'Saeed', url: 'saeed@mail.com' },
-    { id: 4, name: 'User', url: 'user@mail.com' },
-    { id: 5, name: 'PowerAdmin', url: 'poweradmin@mail.com' },
-    { id: 6, name: 'Physician', url: 'Physician@mail.com' },
+    { id: 1, name: 'pacs1', url: 'pacs1@mail.com' },
+    { id: 2, name: 'pacs2', url: 'pacs2@mail.com' },
+    { id: 3, name: 'pacs3', url: 'pacs3@mail.com' },
+    { id: 4, name: 'pacs4', url: 'pacs4@mail.com' },
+    { id: 5, name: 'pacs5', url: 'pacs5@mail.com' },
+    { id: 6, name: 'pacs6', url: 'pacs6@mail.com' },
 
   ],
 };

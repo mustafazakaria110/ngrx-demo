@@ -5,19 +5,21 @@ import { Store } from '@ngrx/store';
 import { loadpacsurl, addpacsurl, editpacsurl, deletepacsurl, PacsurlState } from '@icode-tfs-ngrx-demo/pacsurl-domain';
 import { Router, RouterModule } from '@angular/router';
 import {PacsListComponent} from '@icode-tfs-ngrx-demo/pacsurl-ui'
+import { ParameterlistComponent } from "../paramaterlist/paramaterlist.component";
 
 
 @Component({
   selector: 'lib-pacsurl-list',
   standalone: true,
-  imports: [CommonModule,RouterModule,PacsListComponent],
+  imports: [CommonModule, RouterModule, PacsListComponent, ParameterlistComponent],
   templateUrl: './pacsurlList.component.html',
   styleUrl: './pacsurlList.component.scss',
 })
 export class PacsurlListComponent implements OnInit{
 
   pacsurls$: Observable<any> | undefined;
-
+  parameterPacsId:any;
+  parameterComponent:boolean=false;
   constructor(private store: Store<{ pacsurls: PacsurlState }>,private router: Router,) {
   }
   ngOnInit(): void {
@@ -39,7 +41,7 @@ export class PacsurlListComponent implements OnInit{
   }
   handleshowparameter(pacs:any){
     debugger
-    this.router.navigate([`/editpacs/${pacs}`]); 
-
+this.parameterComponent=true;
+this.parameterPacsId=pacs;
   }
 }

@@ -14,7 +14,7 @@ import { Store } from '@ngrx/store';
 })
 export class ParameterComponent implements OnInit{
   @Input() parameterPacsId: any;
-  PacsForm: FormGroup;
+  ParameterPacsForm: FormGroup;
   isEdit = false; 
   pacsid: number | null = null;
 
@@ -24,7 +24,7 @@ export class ParameterComponent implements OnInit{
     private router: Router,
     private store: Store<{ pacsurls: PacsurlState }>
   ) {
-    this.PacsForm = this.fb.group({
+    this.ParameterPacsForm = this.fb.group({
       name: ['', Validators.required],
       url: ['', [Validators.required, Validators.email]],
     });
@@ -44,15 +44,15 @@ export class ParameterComponent implements OnInit{
   loadUserData(pacsId: number) {
     this.store.select(selectPacsById(pacsId)).subscribe(pacsurl => {
       if (pacsurl) {
-        this.PacsForm.patchValue(pacsurl);
+        this.ParameterPacsForm.patchValue(pacsurl);
       }
     });
   }
 
   onSubmit() {
-    if (this.PacsForm.valid) {
+    if (this.ParameterPacsForm.valid) {
       const pacsData = {
-        ...this.PacsForm.value,
+        ...this.ParameterPacsForm.value,
         id: this.isEdit ? this.pacsid : new Date().getTime()
       };
 

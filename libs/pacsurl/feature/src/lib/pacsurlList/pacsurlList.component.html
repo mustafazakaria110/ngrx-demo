@@ -4,3 +4,4 @@
 (editpacs)="handleEditpacs($event)"
 (showParameter)="handleshowparameter($event)">
 </lib-pacs-list>
+<lib-parameterlist *ngIf="parameterComponent" [parameterPacsId]="parameterPacsId"></lib-parameterlist>

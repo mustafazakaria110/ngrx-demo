@@ -7,7 +7,7 @@ import { of } from 'rxjs';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { AuthState } from './auth.reducer';
-import { authenticatedUser } from './auth.selectors';
+//import { authenticatedUser } from './auth.selectors';
 
 @Injectable()
 export class AuthenticationEffects {

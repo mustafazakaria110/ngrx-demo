@@ -5,6 +5,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { pacsReducer } from '@icode-tfs-ngrx-demo/pacsurl-domain';
 import { StoreModule } from '@ngrx/store';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -13,6 +14,7 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(
       ReactiveFormsModule,
       BrowserModule,
+      BrowserAnimationsModule,
       FormsModule,
       StoreModule.forRoot(
         { pacsurls: pacsReducer },

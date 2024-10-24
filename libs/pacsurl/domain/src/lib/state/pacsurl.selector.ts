@@ -4,4 +4,4 @@ import { PacsurlState } from './pacsurl.reducer';
 export const selectpacs = (state: { pacsurls: PacsurlState }) => state.pacsurls.pacsurls;
 
 export const selectPacsById = (id: number) =>
-  createSelector(selectpacs, (pacsurls) => pacsurls.find(pacsurls => pacsurls.id === +id));
+  createSelector(selectpacs, (pacsurls) => pacsurls.find(pacsurl => pacsurl.id === +id));

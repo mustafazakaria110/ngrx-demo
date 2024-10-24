@@ -25,16 +25,16 @@ export const pacsReducer = createReducer(
 
   on(addpacsurl, (state, { pacsurl }) => ({
     ...state,
-    users: [...state.pacsurls, { id: new Date().getTime(), ...pacsurl }], 
+    pacsurls: [...state.pacsurls, { id: state.pacsurls.length+1, ...pacsurl }], 
   })),
   on(editpacsurl, (state, { pacsurl }) => ({
     ...state,
-    users: state.pacsurls.map(u => (+u.id === +pacsurl.id ? pacsurl : u)),  
+    pacsurls: state.pacsurls.map(u => (+u.id === +pacsurl.id ? pacsurl : u)),  
   })),
 
   on(deletepacsurl, (state, { id }) => ({
     ...state,
-    users: state.pacsurls.filter(pacsurl => pacsurl.id !== id),
+    pacsurls: state.pacsurls.filter(pacsurl => pacsurl.id !== id),
   }))
 
 );

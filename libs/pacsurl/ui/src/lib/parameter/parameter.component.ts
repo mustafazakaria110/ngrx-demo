@@ -1,22 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { addpacsurl, editpacsurl,selectPacsById,PacsurlState } from '@icode-tfs-ngrx-demo/pacsurl-domain';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'lib-persist-pacsurl',
+  selector: 'lib-parameter',
   standalone: true,
   imports: [CommonModule,FormsModule,ReactiveFormsModule],
-  templateUrl: './persist-pacurl.component.html',
-  styleUrl: './persist-pacurl.component.scss',
+  templateUrl: './parameter.component.html',
+  styleUrl: './parameter.component.scss',
 })
-export class PersistPacsurlComponent implements OnInit
- { 
+export class ParameterComponent implements OnInit{
+  @Input() parameterPacsId: any;
   PacsForm: FormGroup;
-  isEdit = false; // Flag to determine if it's edit mode
+  isEdit = false; 
   pacsid: number | null = null;
 
   constructor(
@@ -51,7 +50,6 @@ export class PersistPacsurlComponent implements OnInit
   }
 
   onSubmit() {
-    
     if (this.PacsForm.valid) {
       const pacsData = {
         ...this.PacsForm.value,
@@ -59,7 +57,6 @@ export class PersistPacsurlComponent implements OnInit
       };
 
       if (this.isEdit) {
-        debugger
         this.store.dispatch(editpacsurl({ pacsurl: pacsData }));
       } else {
         this.store.dispatch(addpacsurl({ pacsurl: pacsData }));
@@ -73,4 +70,3 @@ export class PersistPacsurlComponent implements OnInit
     this.router.navigate(['/pacs']); 
   }
 }
-

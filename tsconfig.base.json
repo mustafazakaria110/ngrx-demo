@@ -15,6 +15,16 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@icode-tfs-ngrx-demo/pacsurl": [
+        "lib/pacsurl/pacsurl-feature/src/index.ts"
+      ],
+      "@icode-tfs-ngrx-demo/pacsurl-domain": [
+        "libs/pacsurl/domain/src/index.ts"
+      ],
+      "@icode-tfs-ngrx-demo/pacsurl-feature": [
+        "libs/pacsurl/feature/src/index.ts"
+      ],
+      "@icode-tfs-ngrx-demo/pacsurl-ui": ["libs/pacsurl/ui/src/index.ts"],
       "@icode-tfs-ngrx-demo/ui-common": ["libs/shared/ui-common/src/index.ts"],
       "@icode-tfs-ngrx-demo/util-authentication": [
         "libs/shared/util-authentication/src/index.ts"

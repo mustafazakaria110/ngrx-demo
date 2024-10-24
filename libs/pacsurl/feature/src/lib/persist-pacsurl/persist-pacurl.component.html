@@ -1,0 +1,36 @@
+<div class="Page_Layout">
+
+    <h2>{{ isEdit ? 'Edit User' : 'Add User' }}</h2>
+    <div class="row">
+      <div class="col-md-8 ">
+
+
+    <form [formGroup]="PacsForm" (ngSubmit)="onSubmit()">
+      <div class="row ">
+        <div class="col-lg-6 mb-2">
+          <label for="name">Name</label>
+          <input id="name" formControlName="name" class="form-control" />
+          <div *ngIf="PacsForm.get('name')?.invalid && PacsForm.get('name')?.touched" class="error text-danger">
+            Name is required.
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-2">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" formControlName="url" class="form-control" />
+            <div *ngIf="PacsForm.get('url')?.invalid && PacsForm.get('url')?.touched" class="error text-danger">
+              Valid url is required.
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+<div class="page_butns ">
+  <button (click)="onSubmit()" class="btn-icode " title="Save" [disabled]="PacsForm.invalid">Save</button>
+  <button type="button" class="btn-icode ml-1" title="Cancel" (click)="onCancel()">Cancel</button>
+</div>

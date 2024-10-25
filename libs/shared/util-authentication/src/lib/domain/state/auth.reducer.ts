@@ -1,10 +1,11 @@
 // src/app/store/auth.reducer.ts
 import { createReducer, on } from '@ngrx/store';
 import { login, loginFail, loginSuccess, logout } from './auth.actions';
+import { EUserRole } from '@icode-tfs-ngrx-demo/util-common';
 
 export interface AuthState {
   userName: string | null;
-  userRole: string | null; // Ensure the role is properly typed
+  userRole: EUserRole | null; // Ensure the role is properly typed
   authenticated:boolean | null;
   userToken:string | null;
 }

@@ -11,7 +11,7 @@
             <img src="images/icode.png">
           </div> -->
         </div>
-        <div class="invalid-msg" >
+        <div class="invalid-msg" *ngIf="(authenticated$|async)==false">
           <div  class="col-md-12 pl-0 invalid-txt">
             {{message}}
           </div>

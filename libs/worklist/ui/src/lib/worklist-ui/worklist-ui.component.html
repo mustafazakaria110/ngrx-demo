@@ -1,0 +1,18 @@
+<div>
+    <h2>
+        Worklist
+    </h2>
+</div>
+  
+<kendo-grid #kendoGridInstance="kendoGrid"  [kendoGridBinding]="[]"
+filterable="row" [pageSize]="100" [pageable]="true" [groupable]="false" [reorderable]="true" [resizable]="true"
+[selectable]="true" kendoGridSelectBy="id"  [filterable]="true" 
+[sortable]="true" >
+
+
+<kendo-grid-column field="patientname" title="Patiant Name"></kendo-grid-column>
+<kendo-grid-column field="acc" title="Acc. Number"></kendo-grid-column>
+<kendo-grid-column field="age" title="Age"></kendo-grid-column>
+
+</kendo-grid>
+

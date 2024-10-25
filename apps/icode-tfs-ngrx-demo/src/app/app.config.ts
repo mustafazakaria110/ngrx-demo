@@ -18,14 +18,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(appRoutes),
     importProvidersFrom(
       HttpClientModule,
-      StoreModule.forRoot(
-        { auth: authReducer },
-        
-      ),
       EffectsModule.forRoot([AuthenticationEffects]),
-      StoreDevtoolsModule.instrument({
-        maxAge: 25, // Retains last 25 states
-      }),
       BrowserModule,
       ReactiveFormsModule,
       BrowserAnimationsModule,
@@ -33,6 +26,9 @@ export const appConfig: ApplicationConfig = {
       StoreModule.forRoot(
         { pacsurls: pacsReducer, auth: authReducer },
       ),
+      StoreDevtoolsModule.instrument({
+        maxAge: 25, // Retains last 25 states
+      }),
     
     )
   ],

@@ -36,7 +36,11 @@
       ],
       "@icode-tfs-ngrx-demo/util-common": [
         "libs/shared/util-common/src/index.ts"
-      ]
+      ],
+      "@icode-tfs-ngrx-demo/worklist-feature": [
+        "libs/worklist/features/src/index.ts"
+      ],
+      "@icode-tfs-ngrx-demo/worklist-ui": ["libs/worklist/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -7,7 +7,7 @@ import { of } from 'rxjs';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { AuthState } from './auth.reducer';
-//import { authenticatedUser } from './auth.selectors';
+import { EUserRole } from '@icode-tfs-ngrx-demo/util-common';
 
 @Injectable()
 export class AuthenticationEffects {
@@ -43,14 +43,14 @@ export class AuthenticationEffects {
           ofType(loginSuccess),
           withLatestFrom(this.store.select((state:any)=>state)), // Get authenticated user from the store
           map(([action, user]) => {
-            // Ensure action and user data are present and valid before navigating
-            if (action?.data?.userRole === 1) {
-
+            localStorage.setItem('token', action?.data.userToken);
+            localStorage.setItem('role', JSON.stringify(action?.data.userRole));
+            if (action?.data?.userRole === EUserRole.Admin) {
               return this.router.navigate(['/admin/users']); // Navigate to admin users page
             }
             else
             {
-              return this.router.navigate(['/admin/adduser']); // Navigate to admin users page
+              return this.router.navigate(['/work/worklist']); // Navigate to admin users page
             }
           })
         ),

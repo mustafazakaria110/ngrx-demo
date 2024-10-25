@@ -11,13 +11,8 @@ import { Store } from '@ngrx/store';
   styleUrl: './user-persist.component.scss',
 })
 export class UserPersistComponent {
-  constructor(private store: Store){
-   this.store.select((state:any)=>state.auth).subscribe(
-      s=>{
-        console.log(s);
-        debugger;
-      }
-    ); 
+  constructor(){
+   
   }
   
 }

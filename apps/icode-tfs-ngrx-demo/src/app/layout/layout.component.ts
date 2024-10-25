@@ -4,7 +4,7 @@ import { NavbarComponent } from './../../../../../libs/shared/ui-common/src/lib/
 import { SidebarComponent } from './../../../../../libs/shared/ui-common/src/lib/ui/sidebar/sidebar.component';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -14,10 +14,18 @@ import { RouterModule } from '@angular/router';
   styleUrl: './layout.component.scss',
 })
 export class LayoutComponent {
+  /**
+   *
+   */
+  constructor(private router: Router) {
+    
+  }
   sidebarList: sidebarModel[] = adminList;
   _imageProfilePath="";
   username="";
   logout(){
-
+    localStorage.removeItem('token');
+    localStorage.removeItem('role');
+    this.router.navigate(['/login']);
   }
 }

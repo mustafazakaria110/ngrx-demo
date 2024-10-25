@@ -22,10 +22,12 @@ namespace Infrastructure
       string Server = configuration["Database:SERVER"];
       string DatabaseName = configuration["Database:DATABASENAME"];
       string Port = configuration["Database:PORT"];
-      string connStr = @$"Host={Server};Port={Port};Database={DatabaseName};Username=postgres;Password=P@ssw0rd@Lotus";
+      string pass = configuration["Database:PASSWARD"];
+      string connStr = @$"Host={Server};Port={Port};Database={DatabaseName};Username=postgres;Password={pass};sslmode=prefer;";
       services.AddScoped<IDbConnection>((sp) => new NpgsqlConnection(connStr));
 
       services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+      services.AddScoped<ITokenHandler, TokenHandler>();
       return services;
 
     }

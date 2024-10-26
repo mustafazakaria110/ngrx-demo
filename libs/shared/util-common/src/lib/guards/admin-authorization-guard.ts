@@ -16,7 +16,6 @@ export class AdminAuthorizationGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): boolean {
-    debugger;
     const role = localStorage.getItem('role');
     const canActivate = Number(role) == EUserRole.Admin;
     if(!canActivate)

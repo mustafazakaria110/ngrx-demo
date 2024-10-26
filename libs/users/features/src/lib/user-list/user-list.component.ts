@@ -22,7 +22,6 @@ export class UserListComponent implements OnInit {
 
   openAddPage = () =>
   {
-debugger
     this.router.navigate(['/admin/adduser']);
   }
   

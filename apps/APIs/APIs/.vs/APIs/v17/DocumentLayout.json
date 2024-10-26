@@ -3,24 +3,72 @@
   "WorkspaceRootPath": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\repositories\\userqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\userqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\getusers\\getuserscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\getusers\\getuserscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\getusers\\getuserscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\getusers\\getuserscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\authentication\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\authentication\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\authentication\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\authentication\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\contracts\\users\\iuserqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\contracts\\users\\iuserqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\apis\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\apis\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\apis\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\authentication\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\authentication\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\repositories\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\contracts\\authentication\\itokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,40 +79,12 @@
       "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\models\\authenticationusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\models\\authenticationusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\authentication\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\authentication\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\profiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\core\\application\\contracts\\authentication\\iauthenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\contracts\\authentication\\iauthenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\repositories\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\source-code\\ngrx-demo\\apps\\apis\\apis\\apis\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,45 +94,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TokenHandler.cs",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\TokenHandler.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TokenHandler.cs",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\TokenHandler.cs*",
-              "RelativeToolTip": "Infrastructure\\TokenHandler.cs*",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAcwA4AAABYAAAA",
+              "DocumentIndex": 5,
+              "Title": "IUserQueryRepository.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Contracts\\Users\\IUserQueryRepository.cs",
+              "RelativeDocumentMoniker": "Core\\Application\\Contracts\\Users\\IUserQueryRepository.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Contracts\\Users\\IUserQueryRepository.cs",
+              "RelativeToolTip": "Core\\Application\\Contracts\\Users\\IUserQueryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T09:53:02.206Z",
+              "WhenOpened": "2024-10-26T07:37:04.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\appsettings.json",
-              "RelativeDocumentMoniker": "APIs\\appsettings.json",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\appsettings.json",
-              "RelativeToolTip": "APIs\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-24T09:44:03.701Z",
+              "DocumentIndex": 1,
+              "Title": "GetUsersCommand.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\GetUsers\\GetUsersCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\GetUsers\\GetUsersCommand.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\GetUsers\\GetUsersCommand.cs",
+              "RelativeToolTip": "Core\\Application\\Features\\Users\\GetUsers\\GetUsersCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T06:37:06.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "InfrastructureServiceRegistration.cs",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\InfrastructureServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\InfrastructureServiceRegistration.cs",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\InfrastructureServiceRegistration.cs",
-              "RelativeToolTip": "Infrastructure\\InfrastructureServiceRegistration.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwB0AAAA4AAAA",
+              "Title": "GetUsersCommandHandler.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\GetUsers\\GetUsersCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\GetUsers\\GetUsersCommandHandler.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\GetUsers\\GetUsersCommandHandler.cs",
+              "RelativeToolTip": "Core\\Application\\Features\\Users\\GetUsers\\GetUsersCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:43:45.348Z",
+              "WhenOpened": "2024-10-26T07:31:05.356Z",
               "EditorCaption": ""
             },
             {
@@ -123,14 +143,92 @@
               "RelativeDocumentMoniker": "Core\\Application\\Features\\Authentication\\Login\\LoginCommandHandler.cs",
               "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Authentication\\Login\\LoginCommandHandler.cs",
               "RelativeToolTip": "Core\\Application\\Features\\Authentication\\Login\\LoginCommandHandler.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T08:16:45.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginCommand.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Authentication\\Login\\LoginCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Application\\Features\\Authentication\\Login\\LoginCommand.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Authentication\\Login\\LoginCommand.cs",
+              "RelativeToolTip": "Core\\Application\\Features\\Authentication\\Login\\LoginCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:16:13.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserQueryRepository.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Repositories\\UserQueryRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserQueryRepository.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Repositories\\UserQueryRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\UserQueryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T07:31:28.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "APIs\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "APIs\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAkwBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T06:52:10.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "APIs\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "APIs\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T06:45:21.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Core\\Domain\\Entities\\User.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Core\\Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:38:12.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Profiles\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "Core\\Application\\Profiles\\MappingProfiles.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Profiles\\MappingProfiles.cs",
+              "RelativeToolTip": "Core\\Application\\Profiles\\MappingProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:37:10.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ApplicationServiceRegistration.cs",
               "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\ApplicationServiceRegistration.cs",
               "RelativeDocumentMoniker": "Core\\Application\\ApplicationServiceRegistration.cs",
@@ -143,93 +241,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "APIs\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "APIs\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAowC4AAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:04:28.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Infrastructure",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
-              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "APIs\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "APIs\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-25T09:52:23.041Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:06:06.637Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Program.cs",
               "RelativeDocumentMoniker": "APIs\\Program.cs",
               "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Program.cs",
               "RelativeToolTip": "APIs\\Program.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAYwBcAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T08:46:00.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MappingProfiles.cs",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Profiles\\MappingProfiles.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Profiles\\MappingProfiles.cs",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Profiles\\MappingProfiles.cs",
-              "RelativeToolTip": "Core\\Application\\Profiles\\MappingProfiles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 13,
+              "Title": "InfrastructureServiceRegistration.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\InfrastructureServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\InfrastructureServiceRegistration.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\InfrastructureServiceRegistration.cs",
+              "RelativeToolTip": "Infrastructure\\InfrastructureServiceRegistration.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:37:10.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ITokenHandler.cs",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Contracts\\Authentication\\ITokenHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Contracts\\Authentication\\ITokenHandler.cs",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Contracts\\Authentication\\ITokenHandler.cs",
-              "RelativeToolTip": "Core\\Application\\Contracts\\Authentication\\ITokenHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:15:08.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Core\\Domain\\Entities\\User.cs",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Domain\\Entities\\User.cs",
-              "RelativeToolTip": "Core\\Domain\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:38:12.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthenticationUserModel.cs",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Models\\AuthenticationUserModel.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Models\\AuthenticationUserModel.cs",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Models\\AuthenticationUserModel.cs",
-              "RelativeToolTip": "Core\\Application\\Models\\AuthenticationUserModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:38:46.834Z",
+              "WhenOpened": "2024-10-24T08:43:45.348Z",
               "EditorCaption": ""
             },
             {
@@ -240,27 +286,75 @@
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\AuthenticationRepository.cs",
               "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Repositories\\AuthenticationRepository.cs",
               "RelativeToolTip": "Infrastructure\\Repositories\\AuthenticationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T08:43:04.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginCommand.cs",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Authentication\\Login\\LoginCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Features\\Authentication\\Login\\LoginCommand.cs",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Authentication\\Login\\LoginCommand.cs",
-              "RelativeToolTip": "Core\\Application\\Features\\Authentication\\Login\\LoginCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\appsettings.json",
+              "RelativeDocumentMoniker": "APIs\\appsettings.json",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\appsettings.json",
+              "RelativeToolTip": "APIs\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-24T09:44:03.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TokenHandler.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\TokenHandler.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\TokenHandler.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\TokenHandler.cs",
+              "RelativeToolTip": "Infrastructure\\TokenHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:16:13.952Z",
+              "WhenOpened": "2024-10-25T09:53:02.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
+              "Title": "Infrastructure.csproj",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-25T09:52:23.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ITokenHandler.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Contracts\\Authentication\\ITokenHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Application\\Contracts\\Authentication\\ITokenHandler.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Contracts\\Authentication\\ITokenHandler.cs",
+              "RelativeToolTip": "Core\\Application\\Contracts\\Authentication\\ITokenHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:15:08.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthenticationUserModel.cs",
+              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Models\\AuthenticationUserModel.cs",
+              "RelativeDocumentMoniker": "Core\\Application\\Models\\AuthenticationUserModel.cs",
+              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Models\\AuthenticationUserModel.cs",
+              "RelativeToolTip": "Core\\Application\\Models\\AuthenticationUserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:38:46.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "IAuthenticationRepository.cs",
               "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Contracts\\Authentication\\IAuthenticationRepository.cs",
               "RelativeDocumentMoniker": "Core\\Application\\Contracts\\Authentication\\IAuthenticationRepository.cs",
@@ -268,21 +362,7 @@
               "RelativeToolTip": "Core\\Application\\Contracts\\Authentication\\IAuthenticationRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:13:34.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "APIs\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\source-code\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "APIs\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T08:06:06.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T08:13:34.278Z"
             }
           ]
         }

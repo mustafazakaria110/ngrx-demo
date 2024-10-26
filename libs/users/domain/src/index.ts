@@ -1,1 +1,3 @@
-export * from './lib/user-domain/user-domain.component';
+export * from './lib/store/user.actions';
+export * from './lib/store/user.effects';
+export * from './lib/store/user.reducer';

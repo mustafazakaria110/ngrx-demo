@@ -16,7 +16,7 @@ export const appRoutes: Route[] = [
     {  path: '', component: LayoutComponent, children: [
       {
         path: 'admin',
-        canActivate:[AdminAuthorizationGuard]
+        canActivate:[]
         ,
         loadChildren: () =>
           import('@icode-tfs-ngrx-demo/user-features').then((m) => m.User_ROUTES),

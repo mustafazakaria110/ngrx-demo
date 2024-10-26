@@ -26,10 +26,13 @@ export class AuthenticationEffects {
         mergeMap(({ username, password }) => // Fixed typo from 'passward' to 'password'
           this.authService.authenticate({username:username, passward:password}).pipe(
             map((u) => {
-              return loginSuccess({data:u});
+              if(u.id>0)
+                return loginSuccess({data:u});
+              else 
+                return loginFail();
             }),
             catchError((error) => { 
-              alert ("not a user")
+              alert ("api errrrroooooooooooooooor")
               return of(loginFail()); // Emit loginFail action
             })
           )

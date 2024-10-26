@@ -20,7 +20,6 @@ export class PacsListComponent implements OnInit {
 parameterComponent:boolean=false;
   constructor(private router: Router) {}
   ngOnInit() {
-    debugger
     console.log(this.pacslist)
   }
   onEditpacs(pacsId: any) {
@@ -34,7 +33,6 @@ parameterComponent:boolean=false;
     }
   }
   onShowParameter(pacsId: any) {
-    debugger
     this.showParameter.emit(pacsId);
     this.parameterComponent=true;
     this.Selectedpacs=pacsId;

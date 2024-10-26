@@ -26,7 +26,6 @@ export class PacsurlListComponent implements OnInit{
     
     this.pacsurls$ = this.store.select(state => state.pacsurls.pacsurls);
     this.pacsurls$.subscribe(pacs=>{
-      debugger
       console.log(pacs);
     })
     //this.store.dispatch(loadpacsurl());
@@ -40,7 +39,6 @@ export class PacsurlListComponent implements OnInit{
     this.store.dispatch(deletepacsurl({ id: pacsId }));
   }
   handleshowparameter(pacs:any){
-    debugger
 this.parameterComponent=true;
 this.parameterPacsId=pacs;
   }

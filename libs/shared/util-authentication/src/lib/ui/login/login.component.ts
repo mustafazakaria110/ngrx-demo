@@ -25,7 +25,7 @@ export class LoginComponent {
   password: string = '';
   isAuthenticated$:any;
   authenticated$: any;
-  constructor( private store2: Store , private store: Store<{ auth: AuthState }>, private router: Router,) {
+  constructor(private store: Store<{ auth: AuthState }>, private router: Router,) {
     this.authenticated$ = this.store.pipe(select(state => state.auth.authenticated));
   }
   onLogin() {

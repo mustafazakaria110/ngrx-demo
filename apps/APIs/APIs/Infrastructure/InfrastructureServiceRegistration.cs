@@ -1,4 +1,5 @@
 using Core.Application.Contracts.Authentication;
+using Core.Application.Contracts.Users;
 using Infrastructure.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,6 +28,7 @@ namespace Infrastructure
       services.AddScoped<IDbConnection>((sp) => new NpgsqlConnection(connStr));
 
       services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+      services.AddScoped<IUserQueryRepository, UserQueryRepository>();
       services.AddScoped<ITokenHandler, TokenHandler>();
       return services;
 

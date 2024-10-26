@@ -1,6 +1,6 @@
 // src/app/store/auth.reducer.ts
 import { createReducer, on } from '@ngrx/store';
-import { login, loginFail, loginSuccess, logout } from './auth.actions';
+import { loginFail, loginSuccess, logout } from './auth.actions';
 import { EUserRole } from '@icode-tfs-ngrx-demo/util-common';
 
 export interface AuthState {

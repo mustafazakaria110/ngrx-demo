@@ -21,7 +21,7 @@ namespace Core.Application.Features.Authentication.Login
       var authenticatedUser = await authenticationRepository.GetAuthenticatedUser(request.UserName,request.Passward);
       if (authenticatedUser!=null)
           authenticatedUser.UserToken = this.tokenHandler.GenerateToken(request.UserName, request.Passward);
-      return authenticatedUser ?? throw new Exception("Not Authenticated");
+      return authenticatedUser ?? new AuthenticationUserModel();
     }
 
   }

@@ -1,9 +1,7 @@
 using Core.Application.Features.Authentication.Login;
 using Core.Application.Models;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Reflection;
 
 namespace APIs.Controllers
 {
@@ -12,17 +10,12 @@ namespace APIs.Controllers
   public class AuthenticationController : ControllerBase
   {
     private readonly IMediator _mediator;
-    public AuthenticationController(IMediator mediator)
+    private readonly ILogger<AuthenticationController> _logger;
+    public AuthenticationController(IMediator mediator, ILogger<AuthenticationController> logger)
     {
       this._mediator = mediator;
+      this._logger = logger;
     }
-
-    [HttpGet("test")]
-    public async Task<ActionResult> test()
-    {
-      return Ok("test");
-    }
-
 
     [HttpPost("login")]
     public async Task<ActionResult<AuthenticationUserModel>> Login([FromBody] LoginCommand model)
@@ -41,11 +34,11 @@ namespace APIs.Controllers
         };
 
         AuthenticationUserModel? AuthenticationUserModel = await _mediator.Send(command);
-        return Ok(AuthenticationUserModel); // You may want to return a token or user details here
+        return Ok(AuthenticationUserModel);
       }
       catch (Exception ex)
       {
-        // Log the exception (you might use a logging framework here)
+        this._logger.LogError(ex.Message);
         return StatusCode(500, "Internal server error");
       }
     }

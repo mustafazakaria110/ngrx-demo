@@ -61,7 +61,6 @@ export class PersistPacsurlComponent implements OnInit
       };
 
       if (this.isEdit) {
-        debugger
         pacsData.id=  this.pacsid;
         this.store.dispatch(editpacsurl({ pacsurl: pacsData }));
       } else {

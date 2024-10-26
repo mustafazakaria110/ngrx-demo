@@ -17,6 +17,7 @@ export class UserListUiComponent {
   users$ : Observable<any>;
   @Input() users: any;
   @Output() editUser = new EventEmitter<any>();
+  @Output() addUser = new EventEmitter<any>();
   @Output() deleteUser = new EventEmitter<any>();
 
   constructor(private router: Router, private store: Store<{ users: UserState }>) {
@@ -27,6 +28,9 @@ export class UserListUiComponent {
 
   onEditUser(userId: any) {
     this.editUser.emit(userId);
+  }
+  onAddUser() {
+    this.addUser.emit();
   }
 
   deleteUserPopup(userId: any) {

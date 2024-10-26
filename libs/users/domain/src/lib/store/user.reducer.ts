@@ -1,18 +1,27 @@
 import { createReducer, on } from "@ngrx/store";
-import { GetUsersSuccess } from './user.actions'
+import { GetUserById, GetUserByIdSuccess, GetUsersSuccess } from './user.actions'
+import { User } from "../models/user-entity";
 export interface UserState {
     users: any[]
+    selectedUser:User|null
 }
 
 export const initialState: UserState = {
-    users: []
+    users: [],
+    selectedUser:null
 };
 export const usersReducer = createReducer(
     initialState,
-    on(GetUsersSuccess, (state, { data }) => {
+    on(GetUsersSuccess, (state, { users }) => {
         return {
             ...state,
-            users: data
+            users: users
+        };
+    }),
+    on(GetUserByIdSuccess, (state, { user }) => {
+        return {
+            ...state,
+            selectedUser: user
         };
     }),
 )

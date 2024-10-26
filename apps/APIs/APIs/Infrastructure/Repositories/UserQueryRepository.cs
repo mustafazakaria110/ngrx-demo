@@ -20,8 +20,17 @@ namespace Infrastructure.Repositories
     {
       using (this._connection)
       {
-        string sql = "select * from users";
+        string sql = "select * from users order by fullname;";
         return (await this._connection.QueryAsync<User>(sql)).ToList();
+      }
+    }
+
+    public async Task<User> GetById(long id)
+    {
+      using (this._connection)
+      {
+        string sql = "select * from users where id = @id";
+        return await this._connection.QueryFirstAsync<User>(sql,new { id });
       }
     }
   }

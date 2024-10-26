@@ -11,7 +11,9 @@ export class UserService {
     constructor(private apiManager:APIManager) { }
     
     getUsers(): Observable<any> {
-        debugger
         return this.apiManager.get('users/getusers')      ;
       }
+    getUserById(id:number):Observable<any>{
+        return this.apiManager.get(`users/getbyid/${id}`)      ;
+    }
 }

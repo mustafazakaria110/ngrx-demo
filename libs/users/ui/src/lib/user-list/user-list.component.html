@@ -1,6 +1,6 @@
 <div  class="d-flex align-items-center justify-content-end  mb-2">
     <a id="addNewTemplate" title="Add"  class="btn btn-icode"
-      routerLink="/admin/adduser" routerLinkActive="active"> Add </a>
+    (click)="onAddUser()"> Add </a>
   </div>
   
   <kendo-grid #kendoGridInstance="kendoGrid"      [kendoGridBinding]="(users$ | async) || []"

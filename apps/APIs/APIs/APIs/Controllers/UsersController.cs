@@ -1,3 +1,4 @@
+using Core.Application.Features.Users.GetById;
 using Core.Application.Features.Users.GetUsers;
 using Core.Domain.Entities;
 using MediatR;
@@ -22,8 +23,24 @@ namespace APIs.Controllers
       try
       {
         var command = new GetUsersCommand();
-        List<User> Users = await _mediator.Send(command);
-        return Ok(Users);
+        return Ok(await _mediator.Send(command));
+      }
+      catch (Exception ex)
+      {
+        this._logger.LogError(ex.Message);
+        return StatusCode(500, "Internal server error");
+      }
+    }
+    [HttpGet("getbyid/{id}")]
+    public async Task<ActionResult<User>> GetById(long id)
+    {
+      try
+      {
+        var command = new GetUserByIdCommand()
+        {
+          id = id
+        };
+        return (id > 0) ? Ok(await _mediator.Send(command)) : Ok(new ActionResult<User>(new Core.Domain.Entities.User()));
       }
       catch (Exception ex)
       {

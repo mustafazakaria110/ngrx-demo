@@ -1,9 +1,12 @@
 export class User {
     id!:number;
-    fullName!:string;
     userName!:string;
+    fullName!:string;
     email!:string;
-    risUserId!:string;
     userRole!: number;
+    imageUrl!:string;
     pacsUserName!: string
+    risUserId!:string;
+    isActive!:boolean;
+    institutionId!:number
 }

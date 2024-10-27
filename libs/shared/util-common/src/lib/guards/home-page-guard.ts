@@ -21,7 +21,7 @@ export class HomePageGuard implements CanActivate {
     if(!token)
       return true;
     if(Number(role) == EUserRole.Admin)
-      this.router.navigate(['/users']);
+      this.router.navigate(['/admin/users']);
     else if( Number(role) == EUserRole.User )
       this.router.navigate(['/work/worklist']);
     return true;

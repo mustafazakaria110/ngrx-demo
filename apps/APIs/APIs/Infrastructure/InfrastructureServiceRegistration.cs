@@ -29,6 +29,7 @@ namespace Infrastructure
 
       services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
       services.AddScoped<IUserQueryRepository, UserQueryRepository>();
+      services.AddScoped<IUserCommandsRepository, UserCommandsRepository>();
       services.AddScoped<ITokenHandler, TokenHandler>();
       return services;
 

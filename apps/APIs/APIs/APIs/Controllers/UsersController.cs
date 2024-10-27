@@ -1,5 +1,10 @@
-using Core.Application.Features.Users.GetById;
+using Core.Application.Features.Authentication.Login;
+using Core.Application.Features.Users.AddUser;
+using Core.Application.Features.Users.DeleteUser;
+using Core.Application.Features.Users.GetUserById;
 using Core.Application.Features.Users.GetUsers;
+using Core.Application.Features.Users.UpdateUser;
+using Core.Application.Models;
 using Core.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -38,9 +43,66 @@ namespace APIs.Controllers
       {
         var command = new GetUserByIdCommand()
         {
-          id = id
+          Id = id
         };
         return (id > 0) ? Ok(await _mediator.Send(command)) : Ok(new ActionResult<User>(new Core.Domain.Entities.User()));
+      }
+      catch (Exception ex)
+      {
+        this._logger.LogError(ex.Message);
+        return StatusCode(500, "Internal server error");
+      }
+    }
+    [HttpPost("update")]
+    public async Task<ActionResult<bool>> UpdateUSser([FromBody] User user)
+    {
+      try
+      {
+        var command = new UpdateUserCommand()
+        {
+          User = user
+        };
+
+        return Ok(await _mediator.Send(command));
+
+      }
+      catch (Exception ex)
+      {
+        this._logger.LogError(ex.Message);
+        return StatusCode(500, "Internal server error");
+      }
+    }
+
+    [HttpPost("add")]
+    public async Task<ActionResult<bool>> AddUsser([FromBody] User user)
+    {
+      try
+      {
+        var command = new AddUserCommand()
+        {
+          User = user
+        };
+
+        return Ok(await _mediator.Send(command));
+
+      }
+      catch (Exception ex)
+      {
+        this._logger.LogError(ex.Message);
+        return StatusCode(500, "Internal server error");
+      }
+    }
+    [HttpDelete("Delete/{id}")]
+    public async Task<ActionResult<bool>> DeleteUsser(long id)
+    {
+      try
+      {
+        var command = new DeleteUserCommand()
+        {
+          Id = id
+        };
+
+        return Ok(await _mediator.Send(command));
       }
       catch (Exception ex)
       {

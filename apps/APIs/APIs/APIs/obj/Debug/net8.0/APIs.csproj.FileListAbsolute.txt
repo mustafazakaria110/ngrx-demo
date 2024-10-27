@@ -89,3 +89,10 @@ D:\source-code\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\Microsoft.Identity
 D:\source-code\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 D:\source-code\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\source-code\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\sample-apps\demoo\ngrx-demo\apps\APIs\APIs\APIs\obj\Debug\net8.0\APIs.MvcApplicationPartsAssemblyInfo.cs
+D:\sample-apps\demoo\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+D:\sample-apps\demoo\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\sample-apps\demoo\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\sample-apps\demoo\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\sample-apps\demoo\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\sample-apps\demoo\ngrx-demo\apps\APIs\APIs\APIs\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

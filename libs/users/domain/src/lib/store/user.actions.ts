@@ -3,11 +3,11 @@ import { User } from '../models/user-entity';
 
 export const GetUsers = createAction('[Users] Get Users');
 export const GetUsersSuccess= createAction(
-  '[User] Get Users Success',
+  '[Users] Get Users Success',
   props<{ users: User[] }>()
 );
 export const GetUsersFail = createAction(
-  '[User] Get Users Failure'
+  '[Users] Get Users Failure'
 );
 
 export const GetUserById = createAction('[Users] Get User By ID',
@@ -16,19 +16,29 @@ export const GetUserById = createAction('[Users] Get User By ID',
 export const ResetDetailsMode = createAction('[Users] Reset Details Mode'
 );
 export const GetUserByIdSuccess= createAction(
-  '[User] Get User By ID Success',
+  '[Users] Get User By ID Success',
   props<{ user: User|null }>()
 );
 export const GetUserByIdFail = createAction(
-  '[User] Get User By ID Failure'
+  '[Users] Get User By ID Failure'
 );
 
 export const persistUser = createAction('[Users] Persist User',
   props<{ user:User }>()
 );
 export const persistUserSuccess= createAction(
-  '[User] Persist User Success',
+  '[Users] Persist User Success',
 );
 export const persistUserFail = createAction(
-  '[User] Persist User Failure'
+  '[Users] Persist User Failure'
+);
+
+export const deleteUser = createAction('[User] Delete User',
+  props<{ id:number }>()
+);
+export const deleteUserSuccess= createAction(
+  '[Users] Delete User Success',
+);
+export const deleteUserFail = createAction(
+  '[Users] Delete User Failure'
 );

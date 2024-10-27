@@ -21,4 +21,7 @@ export class UserService {
         return (user.id>0) ?this.apiManager.post(`users/update`,user)
         :this.apiManager.post(`users/add`,user)      ;
     }
+    deleteUser(id:number):Observable<any>{
+        return this.apiManager.delete(`users/delete/${id}`)      ;
+    }
 }

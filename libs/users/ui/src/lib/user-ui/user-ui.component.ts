@@ -44,13 +44,13 @@ export class UserUiComponent {
     this.pagemode$.subscribe((x: string)=>{
       if (x=='view')
         this.userForm.disable();
+      else{
+        this.userForm.enable();
+      }
     })
     this.store.select(s=>s.users.selectedUser).subscribe(u=>{
       if(u!=null)
-      {
         this.userForm.patchValue(u);   
-        this.userForm.disable();   
-      }
     })
   }
   onSubmit() {

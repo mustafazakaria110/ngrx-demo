@@ -1,7 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { UserService } from '../services/user.service';
-import { GetUserById, GetUserByIdFail, GetUserByIdSuccess, GetUsers, GetUsersFail, GetUsersSuccess, persistUser, persistUserFail, persistUserSuccess } from './user.actions';
+import { GetUserById, GetUserByIdFail, GetUserByIdSuccess, 
+  GetUsers, GetUsersFail, GetUsersSuccess, 
+  persistUser, persistUserFail, persistUserSuccess,
+  deleteUser
+} from './user.actions';
 import { catchError, map, mergeMap, withLatestFrom } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { Router } from '@angular/router';
@@ -14,6 +18,7 @@ export class UsersEffects {
   getUsers$: any;
   getUsersById$: any;
   persistUser$:any;
+  deleteUser$:any;
   navigateToUsersListPage$: any;
  
   constructor(
@@ -39,6 +44,8 @@ export class UsersEffects {
       )
     )
   );
+
+
   this.getUsersById$= createEffect(() =>
     this.actions$.pipe(
       ofType(GetUserById),
@@ -56,6 +63,8 @@ export class UsersEffects {
       )
     )
   );
+
+
   this.persistUser$= createEffect(() =>
     this.actions$.pipe(
       ofType(persistUser),
@@ -73,6 +82,25 @@ export class UsersEffects {
       )
     )
   );
+
+  this.deleteUser$= createEffect(() =>
+    this.actions$.pipe(
+      ofType(deleteUser),
+      mergeMap(({id}) => 
+        { 
+          return this.userService.deleteUser(id).pipe(
+          map(() => {
+            return GetUsers();
+          }),
+          catchError((error) => { 
+            alert ("api errrrroooooooooooooooor")
+            return of(GetUsers()); // Emit loginFail action
+          })
+        )}
+      )
+    )
+  );
+
   this.navigateToUsersListPage$ = createEffect(
     () =>
       this.actions$.pipe(
@@ -83,6 +111,6 @@ export class UsersEffects {
       ),
     { dispatch: false } // No further actions to dispatch
   );
-  }
+}
  
 }

@@ -15,7 +15,7 @@ export const GetUserById = createAction('[Users] Get User By ID',
 );
 export const GetUserByIdSuccess= createAction(
   '[User] Get User By ID Success',
-  props<{ user: User }>()
+  props<{ user: User|null }>()
 );
 export const GetUserByIdFail = createAction(
   '[User] Get User By ID Failure'

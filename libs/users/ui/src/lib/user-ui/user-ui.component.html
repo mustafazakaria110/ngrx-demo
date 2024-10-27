@@ -41,6 +41,33 @@
           </div>
         </div>
       </div>
+      <div class="row ">
+        <div class="col-lg-6 mb-2">
+          <label for="userRole">User Type</label>
+          <kendo-dropdownlist [data]="roles" id="userRole" formControlName="userRole" class="form-control"
+          textField="name" valueField="id"  [valuePrimitive]="true"  ></kendo-dropdownlist>
+          <div *ngIf="userForm.get('userRole')?.invalid && userForm.get('userRole')?.touched" class="error text-danger">
+            User Type is required.
+          </div>
+        </div>
+        <div class="col-lg-6 mb-2">
+          <label for="pacsUserName">Pacs Username</label>
+          <input id="pacsUserName" formControlName="pacsUserName" class="form-control" />
+          <div *ngIf="userForm.get('pacsUserName')?.invalid && userForm.get('pacsUserName')?.touched" class="error text-danger">
+            Pacs Username is required.
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-lg-6 mb-2">
+          <label for="risUserId">Ris User Id</label>
+          <input id="risUserId" formControlName="risUserId" class="form-control" />
+          <div *ngIf="userForm.get('risUserId')?.invalid && userForm.get('risUserId')?.touched" class="error text-danger">
+            Ris User Id is required.
+          </div>
+        </div>
+        
+      </div>
     </form>
   </div>
 </div>

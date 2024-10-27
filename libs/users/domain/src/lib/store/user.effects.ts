@@ -46,7 +46,7 @@ export class UsersEffects {
         { 
           return this.userService.getUserById(id?id:0).pipe(
           map((user:User) => {
-              return GetUserByIdSuccess({user});
+              return user.id > 0? GetUserByIdSuccess({user}):GetUserByIdSuccess({user:null});
           }),
           catchError((error) => { 
             alert ("api errrrroooooooooooooooor")

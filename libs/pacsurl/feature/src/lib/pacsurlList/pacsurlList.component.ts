@@ -2,16 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { loadpacsurl, addpacsurl, editpacsurl, deletepacsurl, PacsurlState } from '@icode-tfs-ngrx-demo/pacsurl-domain';
+import { loadpacsurl, addpacsurl, editpacsurl, deletepacsurl, PacsurlState, PacsurlParameterState } from '@icode-tfs-ngrx-demo/pacsurl-domain';
 import { Router, RouterModule } from '@angular/router';
-import {PacsListComponent} from '@icode-tfs-ngrx-demo/pacsurl-ui'
-import { ParameterlistComponent } from "../paramaterlist/paramaterlist.component";
+import {PacsListComponent, ParameterlistUiComponent} from '@icode-tfs-ngrx-demo/pacsurl-ui'
 
 
 @Component({
   selector: 'lib-pacsurl-list',
   standalone: true,
-  imports: [CommonModule, RouterModule, PacsListComponent, ParameterlistComponent],
+  imports: [CommonModule, RouterModule, PacsListComponent, ParameterlistUiComponent],
   templateUrl: './pacsurlList.component.html',
   styleUrl: './pacsurlList.component.scss',
 })
@@ -19,8 +18,10 @@ export class PacsurlListComponent implements OnInit{
 
   pacsurls$: Observable<any> | undefined;
   parameterPacsId:any;
-  parameterComponent:boolean=false;
-  constructor(private store: Store<{ pacsurls: PacsurlState }>,private router: Router,) {
+  showParameterComponent:boolean=false;
+  pacsurlsParameter$: Observable<any> | undefined;
+
+  constructor(private store: Store<{ pacsurls: PacsurlState }>,private store2: Store<{ pacsurlsParameter: PacsurlParameterState }>,private router: Router,) {
   }
   ngOnInit(): void {
     
@@ -39,7 +40,9 @@ export class PacsurlListComponent implements OnInit{
     this.store.dispatch(deletepacsurl({ id: pacsId }));
   }
   handleshowparameter(pacs:any){
-this.parameterComponent=true;
-this.parameterPacsId=pacs;
+    debugger
+    this.showParameterComponent=true;
+    this.parameterPacsId=pacs;
+    this.pacsurlsParameter$ = this.store2.select(state => state.pacsurlsParameter.pacsurlsParameter.filter(i=>i.pacsid==this.parameterPacsId));
   }
 }

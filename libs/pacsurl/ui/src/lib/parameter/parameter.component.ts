@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { addpacsurl, editpacsurl,selectPacsById,PacsurlState } from '@icode-tfs-ngrx-demo/pacsurl-domain';
+import { addpacsurl, editpacsurl,selectPacsById,PacsurlState, editpacsurlParameter, addpacsurlParameter, selectPacsParameterById, PacsurlParameterState } from '@icode-tfs-ngrx-demo/pacsurl-domain';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 
@@ -16,13 +16,14 @@ export class ParameterComponent implements OnInit{
   @Input() parameterPacsId: any;
   ParameterPacsForm: FormGroup;
   isEdit = false; 
-  pacsid: number | null = null;
-
+  pacsParameterid: number | null = null;
+  editedparameter:any;
+  pacsid:number|null=null;
   constructor(
     private fb: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
-    private store: Store<{ pacsurls: PacsurlState }>
+    private store: Store<{pacsurlsParameter: PacsurlParameterState }>
   ) {
     this.ParameterPacsForm = this.fb.group({
       name: ['', Validators.required],
@@ -32,34 +33,44 @@ export class ParameterComponent implements OnInit{
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.pacsid = params['id'];
-      if (this.pacsid) {
+      debugger
+      this.pacsParameterid = params['id'];
+      if (this.pacsParameterid) {
         this.isEdit = true;  
-        this.loadUserData(this.pacsid);  
+        this.loadUserData(this.pacsParameterid);  
+      }else{
+        this.pacsid=params['pacsid']
       }
     });
 
   }
   
-  loadUserData(pacsId: number) {
-    this.store.select(selectPacsById(pacsId)).subscribe(pacsurl => {
-      if (pacsurl) {
-        this.ParameterPacsForm.patchValue(pacsurl);
+  loadUserData(parameterid: number) {
+    debugger
+    this.store.select(selectPacsParameterById(parameterid)).subscribe(param => {
+      if (param) {
+        debugger
+        this.editedparameter=param;
+        this.pacsid=param.pacsid;
+        this.ParameterPacsForm.patchValue(param);
       }
     });
   }
 
   onSubmit() {
     if (this.ParameterPacsForm.valid) {
-      const pacsData = {
+      const parameterData = {
+        
         ...this.ParameterPacsForm.value,
-        id: this.isEdit ? this.pacsid : new Date().getTime()
-      };
+        id: this.isEdit ? this.pacsParameterid : new Date().getTime(),
+        pacsid: this.pacsid
 
+      };
+       debugger
       if (this.isEdit) {
-        this.store.dispatch(editpacsurl({ pacsurl: pacsData }));
+        this.store.dispatch(editpacsurlParameter({ pacsurlParameter: parameterData }));
       } else {
-        this.store.dispatch(addpacsurl({ pacsurl: pacsData }));
+        this.store.dispatch(addpacsurlParameter({ pacsurlParameter: parameterData }));
       }
   
       this.router.navigate(['/pacs']); 

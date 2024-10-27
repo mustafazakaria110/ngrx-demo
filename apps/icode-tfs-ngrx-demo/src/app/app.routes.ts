@@ -3,12 +3,15 @@ import { Route } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import { PacsurlListComponent,PersistPacsurlComponent} from '@icode-tfs-ngrx-demo/pacsurl-feature' 
 import { HomePageGuard,AdminAuthorizationGuard,UserAuthorizationGuard } from '@icode-tfs-ngrx-demo/util-common' 
+import { ParameterComponent } from '@icode-tfs-ngrx-demo/pacsurl-ui';
 export const appRoutes: Route[] = [
     { path: '', component: LoginComponent ,canActivate:[HomePageGuard]},
     { path: 'login', component: LoginComponent },
     {path:'pacs', component:PacsurlListComponent},
     {path:'editpacs/:id', component:PersistPacsurlComponent},
     {path:'addpacs', component:PersistPacsurlComponent},
+    {path:'editParmeter/:id', component:ParameterComponent},
+    {path:'addParameter/:pacsid', component:ParameterComponent},
 
     {  path: '', component: LayoutComponent, children: [
 

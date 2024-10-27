@@ -5,17 +5,14 @@ import { addpacsurl, editpacsurl,selectPacsById,PacsurlState } from '@icode-tfs-
 import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import {PersistpacsurlComponent} from '@icode-tfs-ngrx-demo/pacsurl-ui'
-
 @Component({
-  selector: 'lib-persist-pacsurl',
+  selector: 'lib-persistpacsurl',
   standalone: true,
-  imports: [CommonModule,FormsModule,ReactiveFormsModule,PersistpacsurlComponent],
-  templateUrl: './persist-pacurl.component.html',
-  styleUrl: './persist-pacurl.component.scss',
+  imports: [CommonModule,FormsModule,ReactiveFormsModule],
+  templateUrl: './pesistpacs.component.html',
+  styleUrl: './pesistpacs.component.scss',
 })
-export class PersistPacsurlComponent implements OnInit
- { 
+export class PersistpacsurlComponent implements OnInit {
   PacsForm: FormGroup;
   isEdit = false; // Flag to determine if it's edit mode
   pacsid: number | null = null;
@@ -76,4 +73,6 @@ export class PersistPacsurlComponent implements OnInit
     this.router.navigate(['/pacs']); 
   }
 }
+
+
 

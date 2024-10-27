@@ -50,11 +50,10 @@ namespace Infrastructure.Repositories
     {
       using (this._connection)
       {
-        string sql = @$"UPDATE public.users
-	          SET 
-	          username=@username,
-	          password=@password,
+        string sql = @$"UPDATE users
+	          SET username=@username,
 	          fullname=@fullname,
+            email = @email,
 	          userrole=@userrole,
 	          imageurl=@imageurl,
 	          pacsusername=@pacsusername,
@@ -65,7 +64,7 @@ namespace Infrastructure.Repositories
         try
         {
 
-          await this._connection.ExecuteAsync(sql, user);
+          await _connection.ExecuteAsync(sql, user);
         }
         catch (Exception ex) {
         }

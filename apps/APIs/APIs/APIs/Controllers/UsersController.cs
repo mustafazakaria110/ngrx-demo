@@ -78,6 +78,8 @@ namespace APIs.Controllers
     {
       try
       {
+        if (user.UserRole == 0)
+          user.UserRole = 2;
         var command = new AddUserCommand()
         {
           User = user

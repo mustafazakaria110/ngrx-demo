@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS public.users
     userrole integer,
     imageurl character varying,
     pacsusername character varying,
+    email character varying,
     risuserid character varying,
     institutionid bigint,
     isactive boolean DEFAULT true

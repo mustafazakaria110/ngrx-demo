@@ -5,7 +5,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Npgsql;
 using System.Data;
-using System.Data.Common;
 
 
 namespace Infrastructure

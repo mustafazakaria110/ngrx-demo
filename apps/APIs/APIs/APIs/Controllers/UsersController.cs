@@ -1,10 +1,8 @@
-using Core.Application.Features.Authentication.Login;
 using Core.Application.Features.Users.AddUser;
 using Core.Application.Features.Users.DeleteUser;
 using Core.Application.Features.Users.GetUserById;
 using Core.Application.Features.Users.GetUsers;
 using Core.Application.Features.Users.UpdateUser;
-using Core.Application.Models;
 using Core.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;

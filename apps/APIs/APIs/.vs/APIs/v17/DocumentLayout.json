@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\repositories\\usercommandsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\usercommandsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\jwttokenextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\jwttokenextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\apis\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\deleteuser\\deleteusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\deleteuser\\deleteusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6738B8C-C6FD-4028-A315-EE0CD411FC3E}|APIs\\APIs.csproj|solutionrelative:apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\updateuser\\updateusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\updateuser\\updateusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\core\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\updateuser\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\updateuser\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\deleteuser\\deleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\deleteuser\\deleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\adduser\\addusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\adduser\\addusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\adduser\\addusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\adduser\\addusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\getuserbyid\\getuserbyidcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\getuserbyid\\getuserbyidcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\core\\application\\features\\users\\getuserbyid\\getuserbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8876A236-F4D3-4404-A0C2-5EC69F04B80F}|Core\\Core.csproj|solutionrelative:core\\application\\features\\users\\getuserbyid\\getuserbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|d:\\sample-apps\\demoo\\ngrx-demo\\apps\\apis\\apis\\infrastructure\\repositories\\usercommandsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBA2508A-0079-468E-AF43-D1D61D715E98}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\usercommandsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,132 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserCommandsRepository.cs",
-              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Repositories\\UserCommandsRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserCommandsRepository.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Repositories\\UserCommandsRepository.cs*",
-              "RelativeToolTip": "Infrastructure\\Repositories\\UserCommandsRepository.cs*",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAEYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:39:27.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DeleteUserCommandHandler.cs",
-              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\DeleteUser\\DeleteUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\DeleteUser\\DeleteUserCommandHandler.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\DeleteUser\\DeleteUserCommandHandler.cs",
-              "RelativeToolTip": "Core\\Application\\Features\\Users\\DeleteUser\\DeleteUserCommandHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADgvxMAAAAMAAAAAAAAAA==",
+              "Title": "JwtTokenExtension.cs",
+              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\JwtTokenExtension.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\JwtTokenExtension.cs",
+              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\JwtTokenExtension.cs",
+              "RelativeToolTip": "Infrastructure\\JwtTokenExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:34:49.478Z",
+              "WhenOpened": "2024-10-27T11:04:59.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeleteUserCommand.cs",
-              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\DeleteUser\\DeleteUserCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\DeleteUser\\DeleteUserCommand.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\DeleteUser\\DeleteUserCommand.cs",
-              "RelativeToolTip": "Core\\Application\\Features\\Users\\DeleteUser\\DeleteUserCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "InfrastructureServiceRegistration.cs",
+              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\InfrastructureServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\InfrastructureServiceRegistration.cs",
+              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\InfrastructureServiceRegistration.cs",
+              "RelativeToolTip": "Infrastructure\\InfrastructureServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:34:41.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddUserCommand.cs",
-              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\AddUser\\AddUserCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\AddUser\\AddUserCommand.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\AddUser\\AddUserCommand.cs",
-              "RelativeToolTip": "Core\\Application\\Features\\Users\\AddUser\\AddUserCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:31:27.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddUserCommandHandler.cs",
-              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\AddUser\\AddUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\AddUser\\AddUserCommandHandler.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\AddUser\\AddUserCommandHandler.cs",
-              "RelativeToolTip": "Core\\Application\\Features\\Users\\AddUser\\AddUserCommandHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:31:21.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateUserCommandHandler.cs",
-              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\UpdateUser\\UpdateUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\UpdateUser\\UpdateUserCommandHandler.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\UpdateUser\\UpdateUserCommandHandler.cs",
-              "RelativeToolTip": "Core\\Application\\Features\\Users\\UpdateUser\\UpdateUserCommandHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:28:08.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateUserCommand.cs",
-              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\UpdateUser\\UpdateUserCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\UpdateUser\\UpdateUserCommand.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\UpdateUser\\UpdateUserCommand.cs",
-              "RelativeToolTip": "Core\\Application\\Features\\Users\\UpdateUser\\UpdateUserCommand.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:27:59.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetUserByIdCommandHandler.cs",
-              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\GetUserById\\GetUserByIdCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\GetUserById\\GetUserByIdCommandHandler.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\GetUserById\\GetUserByIdCommandHandler.cs",
-              "RelativeToolTip": "Core\\Application\\Features\\Users\\GetUserById\\GetUserByIdCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:21:38.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetUserByIdCommand.cs",
-              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\GetUserById\\GetUserByIdCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Features\\Users\\GetUserById\\GetUserByIdCommand.cs",
-              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Application\\Features\\Users\\GetUserById\\GetUserByIdCommand.cs",
-              "RelativeToolTip": "Core\\Application\\Features\\Users\\GetUserById\\GetUserByIdCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:21:19.183Z",
+              "WhenOpened": "2024-10-27T10:57:58.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TokenHandler.cs",
+              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\TokenHandler.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\TokenHandler.cs",
+              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\TokenHandler.cs",
+              "RelativeToolTip": "Infrastructure\\TokenHandler.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T10:48:35.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Program.cs",
+              "RelativeDocumentMoniker": "APIs\\Program.cs",
+              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Program.cs",
+              "RelativeToolTip": "APIs\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBIAAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T10:39:32.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "APIs\\Controllers\\UsersController.cs",
               "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\APIs\\Controllers\\UsersController.cs",
               "RelativeToolTip": "APIs\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBMAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T05:20:08.971Z",
+              "WhenOpened": "2024-10-27T06:23:44.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserCommandsRepository.cs",
+              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Repositories\\UserCommandsRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserCommandsRepository.cs",
+              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Repositories\\UserCommandsRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\UserCommandsRepository.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T05:56:11.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Core\\Domain\\Entities\\User.cs",
+              "ToolTip": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Core\\Domain\\Entities\\User.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T05:46:57.991Z",
               "EditorCaption": ""
             }
           ]

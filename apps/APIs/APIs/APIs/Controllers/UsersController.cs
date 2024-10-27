@@ -7,12 +7,14 @@ using Core.Application.Features.Users.UpdateUser;
 using Core.Application.Models;
 using Core.Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace APIs.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
+  [Authorize]
   public class UsersController : ControllerBase
   {
     private readonly IMediator _mediator;
@@ -92,7 +94,7 @@ namespace APIs.Controllers
         return StatusCode(500, "Internal server error");
       }
     }
-    [HttpDelete("Delete/{id}")]
+    [HttpDelete("delete/{id}")]
     public async Task<ActionResult<bool>> DeleteUsser(long id)
     {
       try

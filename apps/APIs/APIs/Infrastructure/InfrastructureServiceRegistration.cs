@@ -14,12 +14,6 @@ namespace Infrastructure
   {
     public static IServiceCollection AddInfrasturctureServices(this IServiceCollection services, IConfiguration configuration)
     {
-
-      //  "SERVER": "localhost",
-      //"DATABASE": "ngrx-demo",
-      //"PORT": "5432",
-      //"USER_NAME": "postgres",
-      //"PASSWARD": "P@ssw0rd@Lotus"
       string Server = configuration["Database:SERVER"];
       string DatabaseName = configuration["Database:DATABASENAME"];
       string Port = configuration["Database:PORT"];
@@ -32,9 +26,6 @@ namespace Infrastructure
       services.AddScoped<IUserCommandsRepository, UserCommandsRepository>();
       services.AddScoped<ITokenHandler, TokenHandler>();
       return services;
-
     }
-
-
   }
 }

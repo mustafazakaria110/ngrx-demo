@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
-import { select, Store } from '@ngrx/store';
-import { AuthState } from '@icode-tfs-ngrx-demo/util-authentication';
-import { Observable, map, tap } from 'rxjs';
 import { EUserRole } from '../enums/EUserRole';
 
 @Injectable({
@@ -10,7 +7,7 @@ import { EUserRole } from '../enums/EUserRole';
 })
 
 export class UserAuthorizationGuard implements CanActivate {
-  constructor(private router: Router, private store: Store<{ auth: AuthState }>) {}
+  constructor(private router: Router) {}
 
   canActivate(
     route: ActivatedRouteSnapshot,

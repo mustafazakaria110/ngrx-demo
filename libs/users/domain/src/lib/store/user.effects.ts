@@ -37,6 +37,8 @@ export class UsersEffects {
               return GetUsersSuccess({users});
           }),
           catchError((error) => { 
+            if (error.status === 401) 
+              alert('Unauthorized request');
             alert ("api errrrroooooooooooooooor")
             return of(GetUsersFail()); // Emit loginFail action
           })
@@ -56,6 +58,8 @@ export class UsersEffects {
               return user.id > 0? GetUserByIdSuccess({user}):GetUserByIdSuccess({user:null});
           }),
           catchError((error) => { 
+            if (error.status === 401) 
+              alert('Unauthorized request');
             alert ("api errrrroooooooooooooooor")
             return of(GetUserByIdFail()); // Emit loginFail action
           })
@@ -75,6 +79,8 @@ export class UsersEffects {
               return persistUserSuccess();
           }),
           catchError((error) => { 
+            if (error.status === 401) 
+              alert('Unauthorized request');
             alert ("api errrrroooooooooooooooor")
             return of(persistUserFail()); // Emit loginFail action
           })
@@ -93,6 +99,8 @@ export class UsersEffects {
             return GetUsers();
           }),
           catchError((error) => { 
+            if (error.status === 401) 
+              alert('Unauthorized request');
             alert ("api errrrroooooooooooooooor")
             return of(GetUsers()); // Emit loginFail action
           })

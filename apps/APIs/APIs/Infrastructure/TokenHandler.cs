@@ -1,4 +1,5 @@
 using Core.Application.Contracts.Authentication;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -12,12 +13,19 @@ namespace Infrastructure
 {
   public class TokenHandler : ITokenHandler
   {
-    private const string SecretKey = "bXlTZWNyZXRrZXlTdXBlclNlY3JldEtleVN1cGVyU2VjcmV0"; // Make sure to replace this with a secure key
-    private const string Issuer = "your-issuer";
-    private const string Audience = "your-audience";
+    private IConfiguration configuration;
+    public TokenHandler(IConfiguration _configuration)
+    {
+      this.configuration = _configuration;
+    }
     public string GenerateToken(string UserName, string passward)
     {
-      var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecretKey));
+      string secretKey = configuration["tokenManagement:secret"];
+      string audience = configuration["tokenManagement:audience"];
+      string issuer = configuration["tokenManagement:issuer"];
+      string accessExpiration = configuration["tokenManagement:accessExpiration"];
+
+      var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
       var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
       //// Define the claims
@@ -29,10 +37,10 @@ namespace Infrastructure
 
       //// Create the JWT token
       var token = new JwtSecurityToken(
-          issuer: Issuer,
-          audience: Audience,
+          issuer: issuer,
+          audience: audience,
           claims: claims,
-          expires: DateTime.UtcNow.AddMinutes(30),
+          expires: DateTime.Now.AddMinutes(int.Parse(accessExpiration)),
           signingCredentials: credentials
       );
 

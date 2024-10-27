@@ -31,7 +31,7 @@ namespace Core.Domain.Entities
     [Column("risuserid", TypeName = "character varying")]
     public string? RisUserId { get; set; }
     [Column("institutionid", TypeName = "bigint")]
-    public long InstitutionId { get; set; }
+    public long? InstitutionId { get; set; }
     [Column("isactive", TypeName = "boolean")]
     public bool IsActive { get; set; }
     

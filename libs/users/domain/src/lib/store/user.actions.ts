@@ -36,9 +36,3 @@ export const persistUserFail = createAction(
 export const deleteUser = createAction('[User] Delete User',
   props<{ id:number }>()
 );
-export const deleteUserSuccess= createAction(
-  '[Users] Delete User Success',
-);
-export const deleteUserFail = createAction(
-  '[Users] Delete User Failure'
-);

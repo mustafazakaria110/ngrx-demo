@@ -22,7 +22,6 @@ export class AuthInterceptor implements HttpInterceptor {
     return next.handle(authReq).pipe(
       catchError((error: HttpErrorResponse) => {
         if (error.status === 401) {
-          // Handle 401 Unauthorized errors here
           console.error('Unauthorized request');
         }
         return throwError(() => new Error(error.message));

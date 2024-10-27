@@ -15,14 +15,10 @@ builder.Services.AddCors(options =>
       });
 });
 builder.Services.AddControllers();
-builder.Services.AddApplicationServices().AddInfrasturctureServices(builder.Configuration);
+
+builder.Services.AddApplicationServices().AddInfrasturctureServices(builder.Configuration).AddJwtTokenManagement(builder.Configuration);
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
 
-builder.Services.AddAuthentication(options =>
-{
-  options.DefaultAuthenticateScheme = "Bearer";
-  options.DefaultChallengeScheme = "Bearer";
-});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -64,7 +60,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("AllowAll");
 
-app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

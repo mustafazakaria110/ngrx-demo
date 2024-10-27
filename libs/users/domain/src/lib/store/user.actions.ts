@@ -11,7 +11,9 @@ export const GetUsersFail = createAction(
 );
 
 export const GetUserById = createAction('[Users] Get User By ID',
-  props<{ id: number|null|undefined }>()
+  props<{ id: number|null|undefined, mode:string}>()
+);
+export const ResetDetailsMode = createAction('[Users] Reset Details Mode'
 );
 export const GetUserByIdSuccess= createAction(
   '[User] Get User By ID Success',

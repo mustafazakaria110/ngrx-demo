@@ -17,6 +17,7 @@ export class UserListUiComponent {
   users$ : Observable<any>;
   @Input() users: any;
   @Output() editUser = new EventEmitter<any>();
+  @Output() viewDetails = new EventEmitter<number>();
   @Output() addUser = new EventEmitter<any>();
   @Output() deleteUser = new EventEmitter<any>();
 
@@ -31,6 +32,9 @@ export class UserListUiComponent {
   }
   onAddUser() {
     this.addUser.emit();
+  }
+  onViewUser(userId:number){
+    this.viewDetails.emit(userId);
   }
 
   deleteUserPopup(userId: any) {

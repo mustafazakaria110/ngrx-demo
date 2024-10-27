@@ -1,6 +1,6 @@
 <div class="Page_Layout">
 
-    <h2>{{ isEdit ? 'Edit User' : 'Add User' }}</h2>
+    <h2>{{ (pagemode$|async) == "edit" ? 'Edit User' : (pagemode$|async) == "add" ? 'Add User' : '' }}</h2>
     <div class="row">
       <div class="col-md-8 ">
 
@@ -9,7 +9,7 @@
       <div class="row ">
         <div class="col-lg-6 mb-2">
           <label for="fullName">Name</label>
-          <input id="fullName" formControlName="fullName" class="form-control" />
+          <input id="fullName" formControlName="fullName" class="form-control"/>
           <div *ngIf="userForm.get('fullName')?.invalid && userForm.get('fullName')?.touched" class="error text-danger">
             Name is required.
           </div>
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="row ">
-        <div class="col-lg-6 mb-2">
+        <div class="col-lg-6 mb-2" *ngIf="(pagemode$|async) !== 'view'">
           <label for="password">Passward</label>
           <input id="password" formControlName="password" class="form-control" />
           <div *ngIf="userForm.get('password')?.invalid && userForm.get('password')?.touched" class="error text-danger">
@@ -73,7 +73,7 @@
 </div>
 </div>
 
-<div class="page_butns ">
-  <button (click)="onSubmit()" class="btn-icode " title="Save" [disabled]="userForm.invalid">Save</button>
-  <button type="button" class="btn-icode ml-1" title="Cancel" (click)="onCancel()">Cancel</button>
+<div class="page_butns">
+  <button *ngIf="(this.pagemode$|async)!='view'" (click)="onSubmit()" class="btn-icode " title="Save" [disabled]="userForm.invalid">Save</button>
+  <button  type="button" class="btn-icode ml-1" title="Cancel" (click)="cancleClicked()">Cancel</button>
 </div>

@@ -3,7 +3,7 @@
     (click)="onAddUser()"> Add </a>
   </div>
   
-  <kendo-grid #kendoGridInstance="kendoGrid"      [kendoGridBinding]="(users$ | async) || []"
+  <kendo-grid #kendoGridInstance="kendoGrid"  [kendoGridBinding]="(users$ | async) || []"
 
     filterable="row" [pageSize]="100" [pageable]="true" [groupable]="false" [reorderable]="true" [resizable]="true"
     [selectable]="true" kendoGridSelectBy="id"  [filterable]="true" 
@@ -11,8 +11,19 @@
   
 
     <kendo-grid-column field="fullName" title="Name"></kendo-grid-column>
+    <kendo-grid-column field="userName" title="Username"></kendo-grid-column>
+    <kendo-grid-column field="risUserId" title="Ris User Id"></kendo-grid-column>
     <kendo-grid-column field="email" title="Email"></kendo-grid-column>
 
+    <kendo-grid-column field="" title="" [width]="30">
+      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+        <div class="k-grid-ignore-click text-center">
+          <a class="table-icon " title="view" (click)="onViewUser(dataItem.id)">
+            <i class="fas fa-eye"></i>
+          </a>
+        </div>
+      </ng-template>
+    </kendo-grid-column>
     <kendo-grid-column field="" title="" [width]="30">
       <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
         <div class="k-grid-ignore-click text-center">

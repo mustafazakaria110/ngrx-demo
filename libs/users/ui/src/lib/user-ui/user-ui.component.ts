@@ -12,15 +12,17 @@ import { Store } from '@ngrx/store';
   standalone: true,
   imports: [CommonModule,FormsModule,ReactiveFormsModule,RouterModule,DropDownsModule],
   templateUrl: './user-ui.component.html',
-  styleUrl: './user-ui.component.scss',
+  styleUrls: ['./user-ui.component.scss'],
 })
 export class UserUiComponent {
 
   @Input() user!:User
   userForm!: FormGroup;
   @Output() submitPersistUser = new EventEmitter<FormGroup>();
-  @Input() isEdit!:boolean; 
+  @Output() onCancel = new EventEmitter<boolean>();
+  @Input() pageMode:string="edit"; 
   roles:{id:number,name:string}[]=[{ id: 1, name:'admin'}, { id: 2, name:'User'}]
+  pagemode$: any;
   constructor(
     private router: Router,
     private fb:FormBuilder,
@@ -38,18 +40,23 @@ export class UserUiComponent {
       isActive: [true, Validators.required],
       institutionId:[null]
     });
+    this.pagemode$ = this.store.select(x=>x.users.detailsPageMode)
+    this.pagemode$.subscribe((x: string)=>{
+      if (x=='view')
+        this.userForm.disable();
+    })
     this.store.select(s=>s.users.selectedUser).subscribe(u=>{
-      if (u!==null)
+      if(u!=null)
       {
-        this.userForm.patchValue(u);
-       // this.userForm.get('userRole')?.patchValue(this.roles.find(r=>r.id == u.userRole));
+        this.userForm.patchValue(u);   
+        this.userForm.disable();   
       }
     })
   }
   onSubmit() {
     this.submitPersistUser.emit(this.userForm);
   }
-  onCancel(){
-    this.router.navigate([`/admin/users`]); 
+  cancleClicked(){
+    this.onCancel.emit()
   }
 }

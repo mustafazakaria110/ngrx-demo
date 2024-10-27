@@ -1,7 +1,8 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
+import { User } from 'libs/users/domain/src/lib/models/user-entity';
 
 @Component({
   selector: 'user-details-ui',
@@ -12,20 +13,25 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class UserUiComponent {
 
-  @Input() userForm!: FormGroup;
-  @Output() submitPersistUser = new EventEmitter<any>();
+  @Input() user!:User
+  userForm!: FormGroup;
+  @Output() submitPersistUser = new EventEmitter<FormGroup>();
   @Input() isEdit!:boolean; 
 
   constructor(
-    private router: Router
+    private router: Router,
+    private fb:FormBuilder
   ) {
-    // this.userForm = this.fb.group({
-    //   name: ['', Validators.required],
-    //   email: ['', [Validators.required, Validators.email]],
-    // });
+    this.userForm = this.fb.group({
+      id:[0],
+      fullName: ['', Validators.required],
+      userName: ['', Validators.required],
+      password: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+    });
   }
   onSubmit() {
-    this.submitPersistUser.emit();
+    this.submitPersistUser.emit(this.userForm);
   }
   onCancel(){
     this.router.navigate([`/admin/users`]); 

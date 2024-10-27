@@ -20,3 +20,13 @@ export const GetUserByIdSuccess= createAction(
 export const GetUserByIdFail = createAction(
   '[User] Get User By ID Failure'
 );
+
+export const persistUser = createAction('[Users] Persist User',
+  props<{ user:User }>()
+);
+export const persistUserSuccess= createAction(
+  '[User] Persist User Success',
+);
+export const persistUserFail = createAction(
+  '[User] Persist User Failure'
+);

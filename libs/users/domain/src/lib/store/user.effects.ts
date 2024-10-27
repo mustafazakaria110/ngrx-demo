@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { UserService } from '../services/user.service';
-import { GetUserById, GetUserByIdFail, GetUserByIdSuccess, GetUsers, GetUsersFail, GetUsersSuccess } from './user.actions';
+import { GetUserById, GetUserByIdFail, GetUserByIdSuccess, GetUsers, GetUsersFail, GetUsersSuccess, persistUser, persistUserFail, persistUserSuccess } from './user.actions';
 import { catchError, map, mergeMap, withLatestFrom } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { Router } from '@angular/router';
@@ -13,7 +13,8 @@ import { User } from '../models/user-entity'
 export class UsersEffects {
   getUsers$: any;
   getUsersById$: any;
-  navigateToUserDetails$: any;
+  persistUser$:any;
+  navigateToUsersListPage$: any;
  
   constructor(
     private actions$: Actions, // Ensure this is injected correctly
@@ -54,6 +55,33 @@ export class UsersEffects {
         )}
       )
     )
+  );
+  this.persistUser$= createEffect(() =>
+    this.actions$.pipe(
+      ofType(persistUser),
+      mergeMap(({user}) => 
+        { 
+          return this.userService.persistUser(user).pipe(
+          map((user:User) => {
+              return persistUserSuccess();
+          }),
+          catchError((error) => { 
+            alert ("api errrrroooooooooooooooor")
+            return of(persistUserFail()); // Emit loginFail action
+          })
+        )}
+      )
+    )
+  );
+  this.navigateToUsersListPage$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(persistUserSuccess),
+        map(() => {
+            return this.router.navigate(['/admin/users']); // Navigate to admin users page
+        })
+      ),
+    { dispatch: false } // No further actions to dispatch
   );
   }
  

@@ -7,7 +7,7 @@ import { of } from 'rxjs';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { UserState } from './user.reducer';
-import { User } from '../models/user-entity';
+import { User } from '../models/user-entity'
 
 @Injectable()
 export class UsersEffects {

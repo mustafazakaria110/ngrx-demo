@@ -43,5 +43,7 @@ Thumbs.db
 
 .angular
 
-.cache
-.vsidx
+*.cache
+*.vsidx
+*.bin
+*.dll

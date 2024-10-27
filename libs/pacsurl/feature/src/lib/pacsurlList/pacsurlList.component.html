@@ -1,7 +1,9 @@
-<lib-pacs-list
+<lib-pacs-list 
 [pacslist]="pacsurls$ | async"
 (deletepacs)="handleDeleteUser($event)"
 (editpacs)="handleEditpacs($event)"
 (showParameter)="handleshowparameter($event)">
 </lib-pacs-list>
-<lib-parameterlist *ngIf="parameterComponent" [parameterPacsId]="parameterPacsId"></lib-parameterlist>
+<lib-parameterlist-ui  
+*ngIf="showParameterComponent"
+[pacsParameterlist]="pacsurlsParameter$ | async" [parameterPacsId]="parameterPacsId"></lib-parameterlist-ui>       

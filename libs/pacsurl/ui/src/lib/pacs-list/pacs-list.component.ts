@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { Router } from '@angular/router';
-import { ParameterComponent } from '../parameter/parameter.component';
 @Component({
   selector: 'lib-pacs-list',
   standalone: true,
-  imports: [CommonModule,RouterModule,GridModule,ParameterComponent],
+  imports: [CommonModule,RouterModule,GridModule],
   templateUrl: './pacs-list.component.html',
   styleUrl: './pacs-list.component.scss',
 })

@@ -45,6 +45,16 @@ export const adminList: sidebarModel[] = [
     navItems: [],
   },
   {
+    label: 'Pacs Url',
+    uniqueLabel: 'pacs',
+    icon: 'fa-users',
+    arrowIcon: false,
+    route: '/admin/pacs',
+    routerLinkActive: 'active',
+    collapsed: true,
+    navItems: [],
+  },
+  {
     label: 'configrations',
     uniqueLabel: 'configrations',
     icon: 'fa-map-marker-alt',

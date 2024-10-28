@@ -8,6 +8,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Core
+<<<<<<< HEAD
 build_property.ProjectDir = D:\source-code-learn\ngrx-demo-v1\ngrx-demo\apps\APIs\APIs\Core\
+=======
+build_property.ProjectDir = D:\sample-apps\tfs-demo\ngrx-demo\apps\APIs\APIs\Core\
+>>>>>>> e0e4129fa66b78839849ed9efe7983fa4defc849
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

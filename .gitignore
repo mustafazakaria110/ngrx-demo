@@ -47,3 +47,5 @@ Thumbs.db
 *.vsidx
 *.bin
 *.dll
+/apps/APIs/APIs/APIs/obj
+/apps/APIs/APIs/APIs/bin

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "uoJFNuPePOY=",
   "success": true,
   "projectFilePath": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
+=======
+  "dgSpecHash": "bysHSRxguHo=",
+  "success": true,
+  "projectFilePath": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
+>>>>>>> e0e4129fa66b78839849ed9efe7983fa4defc849
   "expectedPackageFiles": [
     "C:\\Users\\Haidy Mohamed\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Haidy Mohamed\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",

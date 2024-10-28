@@ -320,11 +320,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
       "projectName": "Core",
       "projectPath": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\Haidy Mohamed\\.nuget\\packages\\",
       "outputPath": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Core\\obj\\",
+=======
+      "projectUniqueName": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
+      "projectName": "Core",
+      "projectPath": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\sara.magdy\\.nuget\\packages\\",
+      "outputPath": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\obj\\",
+>>>>>>> e0e4129fa66b78839849ed9efe7983fa4defc849
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Haidy Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -45,8 +45,12 @@ export class UsersEffects {
               return GetUsersSuccess({ users });
             }),
             catchError((error:Error) => {
-              alert(error.message != 'Not authorized'?'api errrrroooooooooooooooor':"Not authorized");
-              return of(GetUsersFail()); // Emit loginFail action
+              if(error.message != "Not authorized")
+              {
+                alert('api errrrroooooooooooooooor');
+                return of(GetUsersFail()); // Emit GetUsersFail action
+              }
+              return of();
             })
           )
         )
@@ -64,8 +68,12 @@ export class UsersEffects {
                 : GetUserByIdSuccess({ user: null });
             }),
               catchError((error:Error) => {
-                alert(error.message != 'Not authorized'?'api errrrroooooooooooooooor':"Not authorized");                
-              return of(GetUserByIdFail()); // Emit loginFail action
+                if(error.message != "Not authorized")
+                {
+                  alert('api errrrroooooooooooooooor');              
+                  return of(GetUserByIdFail());
+                }
+                return of();
               })
             )
         })
@@ -81,8 +89,12 @@ export class UsersEffects {
               return persistUserSuccess();
             }),
             catchError((error:Error) => {
-              alert(error.message != 'Not authorized'?'api errrrroooooooooooooooor':"Not authorized");
-              return of(persistUserFail()); // Emit loginFail action
+              if(error.message != "Not authorized")
+              {
+                alert('api errrrroooooooooooooooor');
+                return of(persistUserFail()); // Emit persistUserFail action
+              }
+              return of();
             })
           );
         })
@@ -98,8 +110,12 @@ export class UsersEffects {
               return GetUsers();
             }),
             catchError((error:Error) => {
-                alert(error.message != 'Not authorized'?'api errrrroooooooooooooooor':"Not authorized");
-              return of(GetUsers()); // Emit loginFail action
+              if(error.message != "Not authorized")
+              {
+                alert('api errrrroooooooooooooooor');
+                return of(GetUsers()); // Emit loginFail action
+              }
+              return of();
             })
           );
         })

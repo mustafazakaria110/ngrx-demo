@@ -42,8 +42,11 @@ export class AuthenticationEffects {
                 }),
                 catchError((error) => {
                   if (error != 'Not authorized')
+                  {
                     alert('api errrrroooooooooooooooor');
-                  return of(loginFail()); // Emit loginFail action
+                    return of(loginFail()); // Emit loginFail action
+                  }
+                  return of();
                 })
               )
         )

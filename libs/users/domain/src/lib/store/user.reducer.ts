@@ -20,7 +20,7 @@ export const initialState: UserState = {
   detailsPageMode: null,
   gridState: {
     filter: {
-      filters: [{ field: 'risUserId', operator: 'contains', value: 'te' }],
+      filters: [],
       logic: 'and',
     },
     group: [],

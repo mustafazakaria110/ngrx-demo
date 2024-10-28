@@ -23,7 +23,7 @@ namespace Infrastructure.Repositories
       using (this._connection)
       {
         string sql = @$"INSERT INTO public.users(
-	      username, password, fullname, userrole, imageurl, pacsusername, risuserid, institutionid, isactive)
+	      username, password, fullname, userrole, imageurl, pacsusername, risuserid, institutionid, isactive, created)
 	      VALUES (@username, 
 			      @password, 
 			      @fullname,
@@ -32,7 +32,8 @@ namespace Infrastructure.Repositories
 	          @pacsusername,
 	          @risuserid,
 	          @institutionid,
-	          @isactive);";
+	          @isactive,
+            @created);";
         await this._connection.ExecuteAsync(sql,user);
       }
     }
@@ -48,6 +49,7 @@ namespace Infrastructure.Repositories
 
     public async Task EditUser(User user)
     {
+      user.Created = DateTime.Now;
       using (this._connection)
       {
         string sql = @$"UPDATE users
@@ -59,7 +61,8 @@ namespace Infrastructure.Repositories
 	          pacsusername=@pacsusername,
 	          risuserid=@risuserid,
 	          institutionid=@institutionid,
-	          isactive=@isactive
+	          isactive=@isactive,
+            created = @created
 	          WHERE id=@id;";
         try
         {

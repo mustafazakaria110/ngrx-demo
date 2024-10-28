@@ -1,5 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 apps\APIs\APIs\.vs
+apps\APIs\APIs\bin
+apps\APIs\APIs\obj
 # compiled output
 dist
 tmp

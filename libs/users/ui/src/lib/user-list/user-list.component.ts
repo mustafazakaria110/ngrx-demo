@@ -12,13 +12,13 @@ import { Router, RouterModule } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { UserState } from '@icode-tfs-ngrx-demo/user-domain';
 import { Observable, of } from 'rxjs';
-import { GridDataResult } from '@progress/kendo-angular-grid';
+import { CustomDaterangeComponent } from '@icode-tfs-ngrx-demo/util-date-range';
 import { process, DataResult, State } from '@progress/kendo-data-query';
 
 @Component({
   selector: 'lib-user-list-ui',
   standalone: true,
-  imports: [CommonModule, GridModule, RouterModule],
+  imports: [CommonModule, GridModule, RouterModule,CustomDaterangeComponent],
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.scss',
 })

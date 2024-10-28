@@ -1,0 +1,4 @@
+<input type="text" readonly ngxDaterangepickerMd [showDropdowns]="true" [alwaysShowCalendars]="true"
+  [(ngModel)]="defaultValue" [showClearButton]="true" [locale]="options" [ranges]="ranges"
+  [minDate]='minDateOption' [maxDate]='maxDateOption'
+  class="input-filter form-control" (change)="filterRange($event)" (click)="rangeDatePosition($event)" />

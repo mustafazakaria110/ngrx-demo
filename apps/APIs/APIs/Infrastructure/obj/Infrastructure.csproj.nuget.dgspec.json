@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj": {}
+    "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj": {
+    "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\sara.magdy\\.nuget\\packages\\",
-        "outputPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\obj\\",
+        "projectPath": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Haidy Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sara.magdy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Haidy Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,17 +79,17 @@
         }
       }
     },
-    "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\sara.magdy\\.nuget\\packages\\",
-        "outputPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\obj\\",
+        "projectPath": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Haidy Mohamed\\.nuget\\packages\\",
+        "outputPath": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sara.magdy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Haidy Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj": {
-                "projectPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj"
+              "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj": {
+                "projectPath": "D:\\source-code-learn\\ngrx-demo-v1\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj"
               }
             }
           }

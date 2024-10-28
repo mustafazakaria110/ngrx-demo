@@ -9,17 +9,16 @@ import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [CommonModule,RouterModule,SidebarComponent,NavbarComponent],
+  imports: [CommonModule, RouterModule, SidebarComponent, NavbarComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss',
 })
 export class LayoutComponent {
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
   sidebarList: sidebarModel[] = adminList;
-  _imageProfilePath="";
-  username="";
-  logout(){
+  _imageProfilePath = '';
+  username = '';
+  logout() {
     localStorage.removeItem('token');
     localStorage.removeItem('role');
     this.router.navigate(['/login']);

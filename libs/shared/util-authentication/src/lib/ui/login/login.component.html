@@ -1,63 +1,75 @@
 <div class="row login-page">
-    <div class="col-lg-8 col-md-8 col-sm-12 col-12 ps-0">
-      <div class="login_image">
-        <img src="images/login.jpg">
-      </div>
+  <div class="col-lg-8 col-md-8 col-sm-12 col-12 ps-0">
+    <div class="login_image">
+      <img src="images/login.jpg" />
     </div>
-  
-    <div class="col-lg-4 col-md-4 col-sm-5 col-6 sign-in">
-      <div class="sign">
-        <div class="row logo">
-          <div class="col-lg-7 col-md-7 col-sm-10 col-9 mb-3">
-            <img src="images/icode.png">
-          </div>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-5 col-6 sign-in">
+    <div class="sign">
+      <div class="row logo">
+        <div class="col-lg-7 col-md-7 col-sm-10 col-9 mb-3">
+          <img src="images/icode.png" />
         </div>
-        <div class="invalid-msg" *ngIf="(authenticated$|async)==false">
-          <div  class="col-md-12 pl-0 invalid-txt">
-            {{message}}
-          </div>
+      </div>
+      <div class="invalid-msg" *ngIf="(authenticated$ | async) == false">
+        <div class="col-md-12 pl-0 invalid-txt">
+          {{ message }}
         </div>
-  
-        <form (ngSubmit)="onLogin()">
-            <div class="row login mb-3">
-              <div class="col-lg-9 col-md-9 col-sm-12 col-12">
-                <div class="mb-3" style="height: 80px;">
-                    <div>
-                      <label class="lbl">Username</label>
-                      <input  placeholder="Email address or username" 
-                        class="form-control"  tabindex="1" [(ngModel)]="username" name="username" required/>
-                 
-                    </div>
-              
-                </div>
-  
-                <div class="mb-3" style="height: 80px;">
-                  <div>
-                    <label class="lbl">Password</label>
-                    <div class="password-icon">
-                      <input type="password"
-                        class="form-control field-password" tabindex="2" [(ngModel)]="password" name="password"
-                        required
-                      />
-                  
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="k-form-buttons d-block">
-                  <div class="mr-0">
-                    <input  type="submit" name="btnlogin" class="btn" id="btnlogin" tabindex="3"
-                      value="Login" />
-                  </div>
-  
+      </div>
+
+      <form (ngSubmit)="onLogin()">
+        <div class="row login mb-3">
+          <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+            <div class="mb-3" style="height: 80px">
+              <div>
+                <label class="lbl">Username</label>
+                <input
+                  placeholder="Email address or username"
+                  class="form-control"
+                  tabindex="1"
+                  [(ngModel)]="username"
+                  name="username"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mb-3" style="height: 80px">
+              <div>
+                <label class="lbl">Password</label>
+                <div class="password-icon">
+                  <input
+                    type="password"
+                    class="form-control field-password"
+                    tabindex="2"
+                    [(ngModel)]="password"
+                    name="password"
+                    required
+                  />
                 </div>
               </div>
             </div>
-  
-        </form>
-      </div>
-      <div class="footer">
-        © {{Year}} Rosenfield. All rights reserved <a href="http://www.rosenfieldhealth.com">Rosenfield</a>.
-      </div>
+
+            <div class="k-form-buttons d-block">
+              <div class="mr-0">
+                <input
+                  type="submit"
+                  name="btnlogin"
+                  class="btn"
+                  id="btnlogin"
+                  tabindex="3"
+                  value="Login"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      © {{ Year }} Rosenfield. All rights reserved
+      <a href="http://www.rosenfieldhealth.com">Rosenfield</a>.
     </div>
   </div>
+</div>

@@ -1,38 +1,54 @@
+<h2>Parameter for Pacs {{ parameterPacsId }}</h2>
 
-<h2> Parameter for Pacs {{parameterPacsId}}</h2>
+<div class="d-flex align-items-center justify-content-end mb-2">
+  <a
+    id="addNewTemplate"
+    title="Add"
+    class="btn btn-icode"
+    routerLink="/addParameter/{{ parameterPacsId }}"
+    routerLinkActive="active"
+  >
+    Add
+  </a>
+</div>
 
-<div  class="d-flex align-items-center justify-content-end  mb-2">
-    <a id="addNewTemplate" title="Add"  class="btn btn-icode"
-      routerLink="/addParameter/{{parameterPacsId}}" routerLinkActive="active"> Add </a>
-  </div>
-  
-  <kendo-grid #kendoGridInstance="kendoGrid"  [kendoGridBinding]="pacsParameterlist"
-    filterable="row" [pageSize]="100" [pageable]="true" [groupable]="false" [reorderable]="true" [resizable]="true"
-    [selectable]="true" kendoGridSelectBy="id"  [filterable]="true" 
-    [sortable]="true" >
-  
+<kendo-grid
+  #kendoGridInstance="kendoGrid"
+  [kendoGridBinding]="pacsParameterlist"
+  filterable="row"
+  [pageSize]="100"
+  [pageable]="true"
+  [groupable]="false"
+  [reorderable]="true"
+  [resizable]="true"
+  [selectable]="true"
+  kendoGridSelectBy="id"
+  [filterable]="true"
+  [sortable]="true"
+>
+  <kendo-grid-column field="name" title="Name"></kendo-grid-column>
+  <kendo-grid-column field="url" title="Url"></kendo-grid-column>
+  <kendo-grid-column field="" title="" [width]="30">
+    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+      <div class="k-grid-ignore-click text-center">
+        <a class="table-icon" title="Edit" (click)="onEditpacs(dataItem.id)">
+          <i class="fas fa-edit"></i>
+        </a>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
 
-    <kendo-grid-column field="name" title="Name"></kendo-grid-column>
-    <kendo-grid-column field="url" title="Url"></kendo-grid-column>
-    <kendo-grid-column field="" title="" [width]="30">
-      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
-        <div class="k-grid-ignore-click text-center">
-          <a class="table-icon " title="Edit" (click)="onEditpacs(dataItem.id)">
-            <i class="fas fa-edit"></i>
-          </a>
-        </div>
-      </ng-template>
-    </kendo-grid-column>
-  
-    <kendo-grid-column field="" title="" [width]="30">
-      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
-        <div class="k-grid-ignore-click text-center">
-          <a class="table-icon " title="Delete" (click)="deletePacsPopup(dataItem.id)" >
-            <i class="fas fa-trash-alt"></i>
-          </a>
-        </div>
-      </ng-template>
-    </kendo-grid-column>
-  </kendo-grid>
-
-
+  <kendo-grid-column field="" title="" [width]="30">
+    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+      <div class="k-grid-ignore-click text-center">
+        <a
+          class="table-icon"
+          title="Delete"
+          (click)="deletePacsPopup(dataItem.id)"
+        >
+          <i class="fas fa-trash-alt"></i>
+        </a>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+</kendo-grid>

@@ -1,11 +1,20 @@
-import { Component, EventEmitter, Inject, Input, Output } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { Router, RouterModule } from '@angular/router';
 import { select, Store } from '@ngrx/store';
-import { UserState } from '@icode-tfs-ngrx-demo/user-domain'
-import { Observable } from 'rxjs';
-import { CustomDaterangeComponent } from '@icode-tfs-ngrx-demo/util-date-range';
+import { UserState } from '@icode-tfs-ngrx-demo/user-domain';
+import { Observable, of } from 'rxjs';
+import { GridDataResult } from '@progress/kendo-angular-grid';
+import { process, DataResult, State } from '@progress/kendo-data-query';
 
 @Component({
   selector: 'lib-user-list-ui',
@@ -14,16 +23,33 @@ import { CustomDaterangeComponent } from '@icode-tfs-ngrx-demo/util-date-range';
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.scss',
 })
-export class UserListUiComponent {
-  users$ : Observable<any>;
-  @Input() users: any;
+export class UserListUiComponent implements OnChanges {
+  @Input() users: any[] = [];
+  @Input() gridState: any;
   @Output() editUser = new EventEmitter<any>();
   @Output() viewDetails = new EventEmitter<number>();
   @Output() addUser = new EventEmitter<any>();
   @Output() deleteUser = new EventEmitter<any>();
+  @Output() gridStateChanged = new EventEmitter<any>();
+  gridData: { data: any; total: number } | undefined = { data: [], total: 0 };
+  public state: State = {
+    skip: 0,
+    take: 10,
+    // Additional settings such as sorting, filtering, etc.
+  };
 
   constructor(private router: Router, private store: Store<{ users: UserState }> , @Inject(DOCUMENT) private document: Document) {
     this.users$ = this.store.pipe(select(state => state.users.users));
+  }
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['users'] || changes['gridState']) {
+      if (this.users && this.gridState)
+        this.gridData = process(this.users, this.gridState);
+      else {
+        this.gridData!.data = this.users;
+        this.gridData!.total = this.users.length;
+      }
+    }
   }
 
   ngOnInit() {}
@@ -34,15 +60,19 @@ export class UserListUiComponent {
   onAddUser() {
     this.addUser.emit();
   }
-  onViewUser(userId:number){
+  onViewUser(userId: number) {
     this.viewDetails.emit(userId);
   }
 
   deleteUserPopup(userId: any) {
-    const confirmed = window.confirm('Are you sure you want to delete this user?');
+    const confirmed = window.confirm(
+      'Are you sure you want to delete this user?'
+    );
     if (confirmed) {
       this.deleteUser.emit(userId);
     }
   }
-
+  onStateChange(state: any) {
+    this.gridStateChanged.emit(state);
+  }
 }

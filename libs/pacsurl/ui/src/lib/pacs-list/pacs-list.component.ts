@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'lib-pacs-list',
   standalone: true,
-  imports: [CommonModule,RouterModule,GridModule],
+  imports: [CommonModule, RouterModule, GridModule],
   templateUrl: './pacs-list.component.html',
   styleUrl: './pacs-list.component.scss',
 })
@@ -15,25 +15,27 @@ export class PacsListComponent implements OnInit {
   @Output() editpacs = new EventEmitter<any>();
   @Output() deletepacs = new EventEmitter<any>();
   @Output() showParameter = new EventEmitter<any>();
-  Selectedpacs:any;
-parameterComponent:boolean=false;
+  Selectedpacs: any;
+  parameterComponent: boolean = false;
   constructor(private router: Router) {}
   ngOnInit() {
-    console.log(this.pacslist)
+    console.log(this.pacslist);
   }
   onEditpacs(pacsId: any) {
     this.editpacs.emit(pacsId);
   }
 
   deletePacsPopup(pacsId: any) {
-    const confirmed = window.confirm('Are you sure you want to delete this pacs?');
+    const confirmed = window.confirm(
+      'Are you sure you want to delete this pacs?'
+    );
     if (confirmed) {
       this.deletepacs.emit(pacsId);
     }
   }
   onShowParameter(pacsId: any) {
     this.showParameter.emit(pacsId);
-    this.parameterComponent=true;
-    this.Selectedpacs=pacsId;
+    this.parameterComponent = true;
+    this.Selectedpacs = pacsId;
   }
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WorklistUiComponent } from '@icode-tfs-ngrx-demo/worklist-ui'
+import { WorklistUiComponent } from '@icode-tfs-ngrx-demo/worklist-ui';
 
 @Component({
   selector: 'lib-worklist-feature',

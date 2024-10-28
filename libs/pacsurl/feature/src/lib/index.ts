@@ -14,4 +14,3 @@ export const FRONT_ROUTES: Routes = [
   { path: 'pacs/add', component: PersistPacsurlComponent },
   { path: 'pacs/edit/:id', component: PersistPacsurlComponent },
 ];
-

@@ -41,8 +41,8 @@ img {
   margin-left: 25px;
 }
 
-input[type="text"],
-input[type="password"] {
+input[type='text'],
+input[type='password'] {
   border-radius: 6px !important;
   height: 40px !important;
   -webkit-border-radius: 6px !important;
@@ -67,7 +67,7 @@ input[type="password"] {
 
 .form-control:focus {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4) !important;
-  border: none !important
+  border: none !important;
 }
 
 .btn:hover,
@@ -110,7 +110,7 @@ input[type="password"] {
   height: 23px;
 }
 
-@media (min-width:768px) and (max-width:1023.8px) {
+@media (min-width: 768px) and (max-width: 1023.8px) {
   .btn {
     width: 150px;
   }
@@ -120,8 +120,7 @@ input[type="password"] {
   }
 }
 
-
-@media (max-width:767.9px) {
+@media (max-width: 767.9px) {
   .login .container {
     margin-right: 0;
     margin-left: 0;
@@ -133,7 +132,7 @@ input[type="password"] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(229, 233, 236, .9);
+    background: rgba(229, 233, 236, 0.9);
     -webkit-transform: translate(-50%, -50%);
     border-radius: 15px;
   }
@@ -171,7 +170,7 @@ input[type="password"] {
   }
 }
 
-@media (max-width:1024.8px) {
+@media (max-width: 1024.8px) {
   .btn {
     width: 100%;
     font-size: 15px;
@@ -179,7 +178,7 @@ input[type="password"] {
   }
 }
 
-@media (max-height:495.8px) {
+@media (max-height: 495.8px) {
   .login_image {
     height: 600px;
   }
@@ -199,7 +198,7 @@ input[type="password"] {
   }
 }
 
-@media (max-height:495.8px) and (min-width:768px) {
+@media (max-height: 495.8px) and (min-width: 768px) {
   .footer {
     width: 100%;
     padding: 0px 0 0;
@@ -211,13 +210,12 @@ input[type="password"] {
   }
 }
 
-
-@media (max-width:400px) {
+@media (max-width: 400px) {
   .logo div {
     margin: 0 -18px !important;
   }
 
-  .login>div {
+  .login > div {
     padding: 0;
   }
 }

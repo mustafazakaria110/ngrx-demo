@@ -5,16 +5,15 @@ import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'lib-navbar',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  
   @Input() _imagePath: string = 'images/default-profile.png';
   @Input() username: string | null = null;
   @Output() logout = new EventEmitter<void>();
-  constructor( private router:Router) {}
+  constructor(private router: Router) {}
 
   onLogout() {
     this.logout.emit();

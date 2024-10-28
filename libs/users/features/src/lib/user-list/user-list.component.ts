@@ -15,6 +15,7 @@ import { DialogModule } from '@progress/kendo-angular-dialog';
 import { UserPersistComponent } from '../user-persist/user-persist.component';
 import { async, Observable } from 'rxjs';
 import { process } from '@progress/kendo-data-query';
+import { User } from 'libs/users/domain/src/lib/models/user-entity';
 
 @Component({
   selector: 'lib-user-list',
@@ -46,9 +47,14 @@ export class UserListComponent implements OnInit {
     let gridSetting$ = this.store.pipe(
       select((state) => state.users.gridState)
     );
-    users$.subscribe((x) => (this.users = x));
+    users$.subscribe((users) => {
+      this.users = users.map(user => ({
+        ...user,                 
+        created: new Date(user.created)   // Convert 'created' to a Date object
+      }));
+    });
     gridSetting$.subscribe((x) => (this.gridState = x));
-  }
+  } 
   openAddPage = () => {
     this.store.dispatch(GetUserById({ id: 0, mode: 'add' }));
     this.router.navigate(['/admin/adduser']);

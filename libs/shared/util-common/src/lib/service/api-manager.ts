@@ -24,4 +24,9 @@ export class APIManager {
         let url = `${this.apiUrl}/${url2}`;
         return this.http.get(url, { headers })          ;
       }
+    public delete(url2:string): Observable<any> {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json; charset=utf-8' });
+    let url = `${this.apiUrl}/${url2}`;
+    return this.http.delete(url, { headers })          ;
+    }
 }

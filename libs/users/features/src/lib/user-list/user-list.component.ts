@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { UserListUiComponent } from '@icode-tfs-ngrx-demo/user-ui';
-import { GetUsers, GetUserById, UserState, ResetDetailsMode } from '@icode-tfs-ngrx-demo/user-domain'
+import { GetUsers, GetUserById, UserState, ResetDetailsMode, deleteUser } from '@icode-tfs-ngrx-demo/user-domain'
 import { Store } from '@ngrx/store';
 import { DialogModule } from '@progress/kendo-angular-dialog';
 import { UserPersistComponent } from '../user-persist/user-persist.component';
@@ -39,5 +39,8 @@ export class UserListComponent implements OnInit {
   }
   closeDetailsPopup(){
     this.store.dispatch(ResetDetailsMode());
+  }
+  deleteUser(userid:number){
+   this.store.dispatch(deleteUser({id:userid}));
   }
 }

@@ -14,11 +14,7 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './layout.component.scss',
 })
 export class LayoutComponent {
-  /**
-   *
-   */
   constructor(private router: Router) {
-    
   }
   sidebarList: sidebarModel[] = adminList;
   _imageProfilePath="";

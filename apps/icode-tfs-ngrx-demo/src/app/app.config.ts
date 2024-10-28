@@ -8,13 +8,12 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { pacsReducer } from '@icode-tfs-ngrx-demo/pacsurl-domain';
+import { pacsReducer,pacspacsurlsParameterReducer } from '@icode-tfs-ngrx-demo/pacsurl-domain';
 import { StoreModule } from '@ngrx/store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { AuthInterceptor} from '@icode-tfs-ngrx-demo/util-common'
 import { UsersEffects, usersReducer } from '@icode-tfs-ngrx-demo/user-domain';
-import { DateRangeEffects, dateRangeReducer  } from '@icode-tfs-ngrx-demo/util-date-range';
 import { FilterService } from '@progress/kendo-angular-grid';
 
 export const appConfig: ApplicationConfig = {
@@ -30,9 +29,9 @@ export const appConfig: ApplicationConfig = {
       BrowserAnimationsModule,
       FormsModule,
       StoreModule.forRoot(
-        { pacsurls: pacsReducer, auth: authReducer, router: routerReducer, users:usersReducer , dateRange : dateRangeReducer},
+        { pacsurls: pacsReducer, auth: authReducer, router: routerReducer, users:usersReducer  ,pacsurlsParameter: pacspacsurlsParameterReducer},
       ),
-      EffectsModule.forRoot([AuthenticationEffects,UsersEffects , DateRangeEffects]),
+      EffectsModule.forRoot([AuthenticationEffects,UsersEffects ]),
       StoreRouterConnectingModule.forRoot(),
       StoreDevtoolsModule.instrument({
         maxAge: 25, // Retains last 25 states

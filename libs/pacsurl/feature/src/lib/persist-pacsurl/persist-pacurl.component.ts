@@ -5,11 +5,12 @@ import { addpacsurl, editpacsurl,selectPacsById,PacsurlState } from '@icode-tfs-
 import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import {PersistpacsurlComponent} from '@icode-tfs-ngrx-demo/pacsurl-ui'
 
 @Component({
   selector: 'lib-persist-pacsurl',
   standalone: true,
-  imports: [CommonModule,FormsModule,ReactiveFormsModule],
+  imports: [CommonModule,FormsModule,ReactiveFormsModule,PersistpacsurlComponent],
   templateUrl: './persist-pacurl.component.html',
   styleUrl: './persist-pacurl.component.scss',
 })

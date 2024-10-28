@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ParameterlistComponent } from './paramaterlist.component';
+import { PersistpacsurlComponent } from './pesistpacs.component';
 
-describe('ParameterlistComponent', () => {
-  let component: ParameterlistComponent;
-  let fixture: ComponentFixture<ParameterlistComponent>;
+describe('PersistpacsurlComponent', () => {
+  let component: PersistpacsurlComponent;
+  let fixture: ComponentFixture<PersistpacsurlComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ParameterlistComponent],
+      imports: [PersistpacsurlComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ParameterlistComponent);
+    fixture = TestBed.createComponent(PersistpacsurlComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

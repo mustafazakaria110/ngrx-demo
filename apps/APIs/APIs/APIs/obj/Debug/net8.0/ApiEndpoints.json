@@ -54,7 +54,7 @@
   {
     "ContainingType": "APIs.Controllers.UsersController",
     "Method": "DeleteUsser",
-    "RelativePath": "api/Users/Delete/{id}",
+    "RelativePath": "api/Users/delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

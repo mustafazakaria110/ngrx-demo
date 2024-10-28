@@ -1,7 +1,11 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-apps\APIs\APIs\.vs
-apps\APIs\APIs\bin
-apps\APIs\APIs\obj
+apps/APIs/APIs/.vs
+apps/APIs/APIs/APIs/bin
+apps/APIs/APIs/APIs/obj
+apps/APIs/APIs/Infrastructure/obj
+apps/APIs/APIs/Infrastructure/bin
+apps/APIs/APIs/Core/obj
+apps/APIs/APIs/Core/bin
 # compiled output
 dist
 tmp
@@ -49,3 +53,5 @@ Thumbs.db
 *.vsidx
 *.bin
 *.dll
+apps/APIs/APIs/.vs/APIs/v17/.suo
+apps/APIs/APIs/.vs/APIs/v17/.suo

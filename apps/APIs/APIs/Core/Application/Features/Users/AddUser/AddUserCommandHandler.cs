@@ -17,6 +17,7 @@ namespace Core.Application.Features.Users.AddUser
     }
     public async Task<bool> Handle(AddUserCommand request, CancellationToken cancellationToken)
     {
+      request.User.Created = DateTime.UtcNow;
       await this.userCommandsRepository.AddUser(request.User);
       return true;
     }

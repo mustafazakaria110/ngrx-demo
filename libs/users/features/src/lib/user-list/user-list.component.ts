@@ -50,7 +50,7 @@ export class UserListComponent implements OnInit {
     users$.subscribe((users) => {
       this.users = users.map(user => ({
         ...user,                 
-        created: new Date(user.created)   // Convert 'created' to a Date object
+        created: user.created ? new Date(user.created) : null   // Convert 'created' to a Date object
       }));
     });
     gridSetting$.subscribe((x) => (this.gridState = x));

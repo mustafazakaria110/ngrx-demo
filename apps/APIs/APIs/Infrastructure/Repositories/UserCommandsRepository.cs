@@ -49,7 +49,6 @@ namespace Infrastructure.Repositories
 
     public async Task EditUser(User user)
     {
-      user.Created = DateTime.Now;
       using (this._connection)
       {
         string sql = @$"UPDATE users

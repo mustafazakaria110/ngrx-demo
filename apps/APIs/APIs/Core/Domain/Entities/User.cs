@@ -36,7 +36,7 @@ namespace Core.Domain.Entities
     public bool IsActive { get; set; }
 
     [Column("created", TypeName = "timestamp without time zone")]
-    public DateTime Created { get; set; } = DateTime.UtcNow;
+    public DateTime? Created { get; set; }
 
   }
 }

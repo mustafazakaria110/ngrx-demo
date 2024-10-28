@@ -34,6 +34,8 @@ namespace Core.Domain.Entities
     public long? InstitutionId { get; set; }
     [Column("isactive", TypeName = "boolean")]
     public bool IsActive { get; set; }
-    
+
+    [Column("created", TypeName = "timestamp without time zone")]
+    public DateTime? Created { get; set; }
   }
 }

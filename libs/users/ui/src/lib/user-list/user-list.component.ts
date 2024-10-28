@@ -1,3 +1,4 @@
+
 import {
   Component,
   EventEmitter,
@@ -18,7 +19,7 @@ import { process, DataResult, State } from '@progress/kendo-data-query';
 @Component({
   selector: 'lib-user-list-ui',
   standalone: true,
-  imports: [CommonModule, GridModule, RouterModule],
+  imports: [CommonModule, GridModule, RouterModule,CustomDaterangeComponent],
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.scss',
 })
@@ -37,7 +38,8 @@ export class UserListUiComponent implements OnChanges {
     // Additional settings such as sorting, filtering, etc.
   };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private store: Store<{ users: UserState }> , @Inject(DOCUMENT) private document: Document) {
+    this.users$ = this.store.pipe(select(state => state.users.users));
   }
   ngOnChanges(changes: SimpleChanges) {
     if (changes['users'] || changes['gridState']) {

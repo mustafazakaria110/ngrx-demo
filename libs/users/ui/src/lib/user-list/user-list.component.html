@@ -1,67 +1,56 @@
-<div class="d-flex align-items-center justify-content-end mb-2">
-  <a
-    id="addNewTemplate"
-    title="Add"
-    class="btn btn-icode"
-    (click)="onAddUser()"
-  >
-    Add
-  </a>
-</div>
+<div  class="d-flex align-items-center justify-content-end  mb-2">
+    <a id="addNewTemplate" title="Add"  class="btn btn-icode"
+    (click)="onAddUser()"> Add </a>
+  </div>
+  
+  <kendo-grid #kendoGridInstance="kendoGrid"  [kendoGridBinding]="(users$ | async) || []"
 
-<kendo-grid
-  #kendoGridInstance="kendoGrid"
-  [kendoGridBinding]="gridData!.data || []"
-  (dataStateChange)="onStateChange($event)"
-  [filter]="gridState.filter"
-  [sort]="gridState.sort"
-  [pageSize]="gridState.take"
-  [skip]="gridState.skip"
-  filterable="row"
-  [pageable]="true"
-  [groupable]="false"
-  [reorderable]="true"
-  [resizable]="true"
-  [selectable]="true"
-  kendoGridSelectBy="id"
-  [filterable]="true"
-  [sortable]="true"
->
-  <kendo-grid-column field="fullName" title="Name"></kendo-grid-column>
-  <kendo-grid-column field="userName" title="Username"></kendo-grid-column>
-  <kendo-grid-column field="risUserId" title="Ris User Id"></kendo-grid-column>
-  <kendo-grid-column field="email" title="Email"></kendo-grid-column>
+    filterable="row" [pageSize]="100" [pageable]="true" [groupable]="false" [reorderable]="true" [resizable]="true"
+    [selectable]="true" kendoGridSelectBy="id"  [filterable]="true" 
+    [sortable]="true" >
+  
 
-  <kendo-grid-column field="" title="" [width]="30">
-    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
-      <div class="k-grid-ignore-click text-center">
-        <a class="table-icon" title="view" (click)="onViewUser(dataItem.id)">
-          <i class="fas fa-eye"></i>
-        </a>
-      </div>
+    <kendo-grid-column field="fullName" title="Name"></kendo-grid-column>
+    <kendo-grid-column field="userName" title="Username"></kendo-grid-column>
+    <kendo-grid-column field="risUserId" title="Ris User Id"></kendo-grid-column>
+    <kendo-grid-column field="email" title="Email"></kendo-grid-column>
+    <kendo-grid-column field="created" format="{0:dd/MM/yyyy}" title="Created">
+    <ng-template kendoGridFilterCellTemplate let-filter>
+      <app-daterange class="date-range-filter" [filter]="filter"  field="created">
+      </app-daterange>
     </ng-template>
-  </kendo-grid-column>
-  <kendo-grid-column field="" title="" [width]="30">
-    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
-      <div class="k-grid-ignore-click text-center">
-        <a class="table-icon" title="Edit" (click)="onEditUser(dataItem.id)">
-          <i class="fas fa-edit"></i>
-        </a>
-      </div>
+    <ng-template kendoGridCellTemplate let-dataItem>
+      {{dataItem.created | date: 'dd/MM/yyyy'}}
     </ng-template>
   </kendo-grid-column>
 
-  <kendo-grid-column field="" title="" [width]="30">
-    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
-      <div class="k-grid-ignore-click text-center">
-        <a
-          class="table-icon"
-          title="Delete"
-          (click)="deleteUserPopup(dataItem.id)"
-        >
-          <i class="fas fa-trash-alt"></i>
-        </a>
-      </div>
-    </ng-template>
-  </kendo-grid-column>
-</kendo-grid>
+    <kendo-grid-column field="" title="" [width]="30">
+      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+        <div class="k-grid-ignore-click text-center">
+          <a class="table-icon " title="view" (click)="onViewUser(dataItem.id)">
+            <i class="fas fa-eye"></i>
+          </a>
+        </div>
+      </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="" title="" [width]="30">
+      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+        <div class="k-grid-ignore-click text-center">
+          <a class="table-icon " title="Edit" (click)="onEditUser(dataItem.id)">
+            <i class="fas fa-edit"></i>
+          </a>
+        </div>
+      </ng-template>
+    </kendo-grid-column>
+  
+    <kendo-grid-column field="" title="" [width]="30">
+      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+        <div class="k-grid-ignore-click text-center">
+          <a class="table-icon " title="Delete" (click)="deleteUserPopup(dataItem.id)" >
+            <i class="fas fa-trash-alt"></i>
+          </a>
+        </div>
+      </ng-template>
+    </kendo-grid-column>
+  </kendo-grid>
+

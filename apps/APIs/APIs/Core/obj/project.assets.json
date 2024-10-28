@@ -315,19 +315,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sara.magdy\\.nuget\\packages\\": {}
+    "C:\\Users\\Haidy Mohamed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\source-code-learn\\ngrx-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\sara.magdy\\.nuget\\packages\\",
-      "outputPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\obj\\",
+      "projectPath": "D:\\source-code-learn\\ngrx-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\Haidy Mohamed\\.nuget\\packages\\",
+      "outputPath": "D:\\source-code-learn\\ngrx-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sara.magdy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Haidy Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

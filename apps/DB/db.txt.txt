@@ -16,3 +16,7 @@ CREATE TABLE IF NOT EXISTS public.users
 INSERT INTO public.users(	username, password,
 	fullname	, userrole, imageurl, isactive)
 	VALUES ('powerAdmin','123456','power admin', 1,'',true);
+#add created column   
+ALTER TABLE users 
+ADD COLUMN created timestamp without time zone;
+UPDATE users set created = '2024-10-07 11:32:33.5584'

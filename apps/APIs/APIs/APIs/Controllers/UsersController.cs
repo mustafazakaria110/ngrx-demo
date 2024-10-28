@@ -78,6 +78,7 @@ namespace APIs.Controllers
     {
       try
       {
+        user.Created = DateTime.UtcNow;
         var command = new AddUserCommand()
         {
           User = user

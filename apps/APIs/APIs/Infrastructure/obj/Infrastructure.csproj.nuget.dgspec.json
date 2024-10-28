@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj": {}
+    "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj": {
+    "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
+        "projectPath": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\sara.magdy\\.nuget\\packages\\",
-        "outputPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\obj\\",
+        "outputPath": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sara.magdy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,14 +79,14 @@
         }
       }
     },
-    "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\sara.magdy\\.nuget\\packages\\",
-        "outputPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\obj\\",
+        "outputPath": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sara.magdy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -104,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj": {
-                "projectPath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj"
+              "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj": {
+                "projectPath": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Core\\Core.csproj"
               }
             }
           }

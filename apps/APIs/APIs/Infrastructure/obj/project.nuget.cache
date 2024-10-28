@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uhfdAvdhe+o=",
+  "dgSpecHash": "bysHSRxguHo=",
   "success": true,
-  "projectFilePath": "D:\\sample-apps\\demoo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\sample-apps\\tfs-demo\\ngrx-demo\\apps\\APIs\\APIs\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sara.magdy\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\sara.magdy\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",

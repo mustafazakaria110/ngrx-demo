@@ -1,8 +1,16 @@
-<lib-user-list-ui (addUser)="openAddPage()" 
-(editUser)="openEditPage($event)" (viewDetails)="viewDetails($event)" (deleteUser)="deleteUser($event)"></lib-user-list-ui>
-<kendo-dialog *ngIf="(this.detailsPageMode$|async)=='view'" (close)="closeDetailsPopup()">
-    <kendo-dialog-titlebar>
-        Details
-    </kendo-dialog-titlebar>
-    <lib-user-persist></lib-user-persist>
+<lib-user-list-ui
+  [users]="users"
+  (addUser)="openAddPage()"
+  (gridStateChanged)="saveGridState($event)"
+  [gridState]="gridState"
+  (editUser)="openEditPage($event)"
+  (viewDetails)="viewDetails($event)"
+  (deleteUser)="deleteUser($event)"
+></lib-user-list-ui>
+<kendo-dialog
+  *ngIf="(this.detailsPageMode$ | async) == 'view'"
+  (close)="closeDetailsPopup()"
+>
+  <kendo-dialog-titlebar> Details </kendo-dialog-titlebar>
+  <lib-user-persist></lib-user-persist>
 </kendo-dialog>

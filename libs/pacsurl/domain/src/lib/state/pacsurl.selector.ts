@@ -1,7 +1,10 @@
 import { createSelector } from '@ngrx/store';
 import { PacsurlState } from './pacsurl.reducer';
 
-export const selectpacs = (state: { pacsurls: PacsurlState }) => state.pacsurls.pacsurls;
+export const selectpacs = (state: { pacsurls: PacsurlState }) =>
+  state.pacsurls.pacsurls;
 
 export const selectPacsById = (id: number) =>
-  createSelector(selectpacs, (pacsurls) => pacsurls.find(pacsurl => pacsurl.id === +id));
+  createSelector(selectpacs, (pacsurls) =>
+    pacsurls.find((pacsurl) => pacsurl.id === +id)
+  );

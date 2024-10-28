@@ -1,5 +1,10 @@
 import { createReducer, on } from '@ngrx/store';
-import { loadpacsurl, addpacsurl, editpacsurl, deletepacsurl } from './pacsurl.actions';
+import {
+  loadpacsurl,
+  addpacsurl,
+  editpacsurl,
+  deletepacsurl,
+} from './pacsurl.actions';
 import { Pacsurl } from '../models/pacsurl';
 
 export interface PacsurlState {
@@ -14,7 +19,6 @@ const initialState: PacsurlState = {
     { id: 4, name: 'pacs4', url: 'pacs4@mail.com' },
     { id: 5, name: 'pacs5', url: 'pacs5@mail.com' },
     { id: 6, name: 'pacs6', url: 'pacs6@mail.com' },
-
   ],
 };
 
@@ -25,16 +29,18 @@ export const pacsReducer = createReducer(
 
   on(addpacsurl, (state, { pacsurl }) => ({
     ...state,
-    pacsurls: [...state.pacsurls, { id: state.pacsurls.length+1, ...pacsurl }], 
+    pacsurls: [
+      ...state.pacsurls,
+      { id: state.pacsurls.length + 1, ...pacsurl },
+    ],
   })),
   on(editpacsurl, (state, { pacsurl }) => ({
     ...state,
-    pacsurls: state.pacsurls.map(u => (+u.id === +pacsurl.id ? pacsurl : u)),  
+    pacsurls: state.pacsurls.map((u) => (+u.id === +pacsurl.id ? pacsurl : u)),
   })),
 
   on(deletepacsurl, (state, { id }) => ({
     ...state,
-    pacsurls: state.pacsurls.filter(pacsurl => pacsurl.id !== id),
+    pacsurls: state.pacsurls.filter((pacsurl) => pacsurl.id !== id),
   }))
-
 );

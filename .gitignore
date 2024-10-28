@@ -49,3 +49,10 @@ Thumbs.db
 *.dll
 /apps/APIs/APIs/APIs/obj
 /apps/APIs/APIs/APIs/bin
+/apps/APIs/APIs/.vs/APIs/v17
+/apps/APIs/APIs/Infrastructure/bin
+/apps/APIs/APIs/Infrastructure/obj
+/apps/APIs/APIs/Core/bin
+/apps/APIs/APIs/Core/obj
+/apps/APIs/APIs/APIs/bin
+/apps/APIs/APIs/APIs/obj

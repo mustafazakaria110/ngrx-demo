@@ -9,4 +9,5 @@ export class User {
     risUserId!:string;
     isActive!:boolean;
     institutionId!:number
+    created!:Date
 }

@@ -22,8 +22,9 @@ namespace Infrastructure.Repositories
     {
       using (this._connection)
       {
+        user.Created = DateTime.UtcNow;
         string sql = @$"INSERT INTO public.users(
-	      username, password, fullname, userrole, imageurl, pacsusername, risuserid, institutionid, isactive)
+	      username, password, fullname, userrole, imageurl, pacsusername, risuserid, institutionid, isactive,created)
 	      VALUES (@username, 
 			      @password, 
 			      @fullname,
@@ -32,7 +33,8 @@ namespace Infrastructure.Repositories
 	          @pacsusername,
 	          @risuserid,
 	          @institutionid,
-	          @isactive);";
+	          @isactive,
+            @created);";
         await this._connection.ExecuteAsync(sql,user);
       }
     }

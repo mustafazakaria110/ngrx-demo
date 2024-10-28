@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { AuthInterceptor } from '@icode-tfs-ngrx-demo/util-common';
 import { UsersEffects, usersReducer } from '@icode-tfs-ngrx-demo/user-domain';
+import { DicomNodeReducer, DicomNodesEffects } from '@icode-tfs-ngrx-demo/dicomnode-domain';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
@@ -38,8 +39,9 @@ export const appConfig: ApplicationConfig = {
         router: routerReducer,
         users: usersReducer,
         pacsurlsParameter: pacspacsurlsParameterReducer,
+        dicomNodes:DicomNodeReducer
       }),
-      EffectsModule.forRoot([AuthenticationEffects, UsersEffects]),
+      EffectsModule.forRoot([AuthenticationEffects, UsersEffects,DicomNodesEffects]),
       StoreRouterConnectingModule.forRoot(),
       StoreDevtoolsModule.instrument({
         maxAge: 25, // Retains last 25 states

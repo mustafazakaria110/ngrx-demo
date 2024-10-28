@@ -35,6 +35,16 @@ export const adminList: sidebarModel[] = [
     navItems: [],
   },
   {
+    label: 'Dicom Nodes',
+    uniqueLabel: 'dicomnodes',
+    icon: 'fa-users',
+    arrowIcon: false,
+    route: '/admin/dicomnodes',
+    routerLinkActive: 'active',
+    collapsed: true,
+    navItems: [],
+  },
+  {
     label: 'configrations',
     uniqueLabel: 'configrations',
     icon: 'fa-map-marker-alt',

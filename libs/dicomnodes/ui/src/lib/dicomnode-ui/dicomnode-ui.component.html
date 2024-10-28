@@ -1,0 +1,36 @@
+<kendo-grid #kendoGridInstance="kendoGrid" [kendoGridBinding]="(dicomNodes$ | async) || []" filterable="row" [selectable]="true" [pageSize]="100"
+  [pageable]="true" [sortable]="true" [groupable]="false" [reorderable]="false" [resizable]="true" [filterable]="true"
+  class="w-100 mt-2" kendoGridSelectBy="id">
+
+  <kendo-grid-column field="name" title="Name">
+  </kendo-grid-column>
+
+  <kendo-grid-column field="ip" title="IP">
+  </kendo-grid-column>
+
+  <kendo-grid-column field="aeTitle" title="AE Title">
+  </kendo-grid-column>
+
+  <kendo-grid-column field="port" title="Port No.">
+  </kendo-grid-column>
+
+  <kendo-grid-column field="" title="" [width]="35">
+    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+      <div class="k-grid-ignore-click text-center">
+        <a class="table-icon" title="Edit">
+          <i class="fas fa-edit">
+          </i>
+        </a>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+
+
+  <kendo-grid-column field="" title="" [width]="35">
+    <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+      <div class="k-grid-ignore-click text-center">
+        <a class="table-icon" title="Delete"><i class="fas fa-trash-alt"></i></a>
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+</kendo-grid>

@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { PacsurlListComponent } from './pacsurlList/pacsurlList.component';
 import { PersistPacsurlComponent } from './persist-pacsurl/persist-pacurl.component';
 
-export const ADMIN_ROUTES: Routes = [
+export const pacs_ROUTES: Routes = [
   { path: '', component: PacsurlListComponent },
   { path: 'pacs', component: PacsurlListComponent },
   { path: 'addpacs', component: PersistPacsurlComponent },

@@ -34,6 +34,22 @@ export const appRoutes: Route[] = [
           ),
       },
       {
+        path: 'admin',
+        canActivate: [],
+        loadChildren: () =>
+          import('@icode-tfs-ngrx-demo/dicomnodesfeature').then(
+            (m) => m.DicomNodes_ROUTES
+          ),
+      },
+      {
+        path: 'admin',
+        canActivate: [],
+        loadChildren: () =>
+          import('@icode-tfs-ngrx-demo/pacsurl-feature').then(
+            (m) => m.pacs_ROUTES
+          ),
+      },
+      {
         path: 'work',
         canActivate: [UserAuthorizationGuard],
         loadChildren: () =>

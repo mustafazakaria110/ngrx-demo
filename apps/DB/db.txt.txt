@@ -16,3 +16,14 @@ CREATE TABLE IF NOT EXISTS public.users
 INSERT INTO public.users(	username, password,
 	fullname	, userrole, imageurl, isactive)
 	VALUES ('powerAdmin','123456','power admin', 1,'',true);
+
+create table dicomnodes(
+id bigserial primary key , 
+name character varying ,
+aetitle character varying ,
+ip character varying ,
+port integer
+);
+ 
+insert into dicomnodes(name , aetitle , ip  , port)
+values ('Dicom Node 1' , 'aetitle' , '192.168.1.42' , 5073);

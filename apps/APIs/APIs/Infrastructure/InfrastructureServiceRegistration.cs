@@ -1,4 +1,5 @@
 using Core.Application.Contracts.Authentication;
+using Core.Application.Contracts.DicomNodes;
 using Core.Application.Contracts.Users;
 using Infrastructure.Repositories;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +24,7 @@ namespace Infrastructure
       services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
       services.AddScoped<IUserQueryRepository, UserQueryRepository>();
       services.AddScoped<IUserCommandsRepository, UserCommandsRepository>();
+      services.AddScoped<IDicomNodesQuery, DicomNodesQueryRepository>();
       services.AddScoped<ITokenHandler, TokenHandler>();
       return services;
     }

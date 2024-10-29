@@ -21,11 +21,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { AuthInterceptor } from '@icode-tfs-ngrx-demo/util-common';
 import { UsersEffects, usersReducer } from '@icode-tfs-ngrx-demo/user-domain';
+import { DateRangeEffect, dateRangeReducer } from '@icode-tfs-ngrx-demo/util-date-range';
+import { FilterService } from '@progress/kendo-angular-grid';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(appRoutes),
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    FilterService,
     importProvidersFrom(
       HttpClientModule,
       BrowserModule,
@@ -38,8 +41,9 @@ export const appConfig: ApplicationConfig = {
         router: routerReducer,
         users: usersReducer,
         pacsurlsParameter: pacspacsurlsParameterReducer,
+        dateRange: dateRangeReducer,
       }),
-      EffectsModule.forRoot([AuthenticationEffects, UsersEffects]),
+      EffectsModule.forRoot([AuthenticationEffects, UsersEffects , DateRangeEffect]),
       StoreRouterConnectingModule.forRoot(),
       StoreDevtoolsModule.instrument({
         maxAge: 25, // Retains last 25 states

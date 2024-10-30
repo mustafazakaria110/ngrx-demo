@@ -5,8 +5,6 @@ import { login } from '../../domain/state/auth.actions';
 import { AuthState } from '../../domain/state/auth.reducer';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { EffectsModule, provideEffects } from '@ngrx/effects';
-import { AuthenticationEffects } from '../../domain/state/auth.effects';
 import { AuthService } from '../../domain/services/authentication.service';
 
 @Component({

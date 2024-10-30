@@ -14,6 +14,8 @@ import { UserState } from '@icode-tfs-ngrx-demo/user-domain';
 import { Observable, of } from 'rxjs';
 import { CustomDaterangeComponent } from '@icode-tfs-ngrx-demo/util-date-range';
 import { process, DataResult, State } from '@progress/kendo-data-query';
+import moment, { Moment } from "moment";
+import dayjs , { Dayjs}  from 'dayjs';
 
 @Component({
   selector: 'lib-user-list-ui',
@@ -50,7 +52,28 @@ export class UserListUiComponent implements OnChanges {
     }
   }
 
-  ngOnInit() {}
+  getDateRangeDefaultValue(){
+    var timeRange  :null | {startDate?:Dayjs|null, endDate?:Dayjs|null}= null;
+    if(this.gridState)
+    {
+      var t= this.gridState?.filter?.filters?.filter((f:any)=>f.field=='created');
+      if(t && t.length>0)
+        {
+          const startItem = t.find((f: any) => f.operator === 'gte').value;
+          const endItem = t.find((f: any) => f.operator === 'lte').value;
+          timeRange = {
+            startDate: startItem ? startItem: null,
+            endDate: endItem ? endItem : null
+          };
+        }
+      }
+    console.log(timeRange)
+  return timeRange;
+  }
+  selectedDateRange:any;
+  ngOnInit() {
+    this.selectedDateRange = this.getDateRangeDefaultValue();
+  }
 
   onEditUser(userId: any) {
     this.editUser.emit(userId);

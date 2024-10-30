@@ -56,6 +56,7 @@
     "angular-auth-oidc-client": "^18.0.2",
     "angular-in-memory-web-api": "^0.18.0",
     "bootstrap": "^5.3.3",
+    "dayjs": "^1.11.13",
     "force": "^0.0.3",
     "moment": "^2.30.1",
     "ngx-daterangepicker-material": "^6.0.4",

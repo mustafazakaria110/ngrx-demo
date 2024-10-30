@@ -21,7 +21,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { routerReducer, StoreRouterConnectingModule } from '@ngrx/router-store';
 import { AuthInterceptor } from '@icode-tfs-ngrx-demo/util-common';
 import { UsersEffects, usersReducer } from '@icode-tfs-ngrx-demo/user-domain';
-import { DateRangeEffect, dateRangeReducer } from '@icode-tfs-ngrx-demo/util-date-range';
 import { FilterService } from '@progress/kendo-angular-grid';
 import { DicomNodeReducer, DicomNodesEffects } from '@icode-tfs-ngrx-demo/dicomnode-domain';
 export const appConfig: ApplicationConfig = {
@@ -42,10 +41,9 @@ export const appConfig: ApplicationConfig = {
         router: routerReducer,
         users: usersReducer,
         pacsurlsParameter: pacspacsurlsParameterReducer,
-        dateRange : dateRangeReducer,
         dicomNodes:DicomNodeReducer
       }),
-      EffectsModule.forRoot([AuthenticationEffects, UsersEffects,DicomNodesEffects , DateRangeEffect]),
+      EffectsModule.forRoot([AuthenticationEffects, UsersEffects,DicomNodesEffects]),
       StoreRouterConnectingModule.forRoot(),
       StoreDevtoolsModule.instrument({
         maxAge: 25, // Retains last 25 states

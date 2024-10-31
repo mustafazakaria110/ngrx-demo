@@ -16,6 +16,9 @@ CREATE TABLE IF NOT EXISTS public.users
 INSERT INTO public.users(	username, password,
 	fullname	, userrole, imageurl, isactive)
 	VALUES ('powerAdmin','123456','power admin', 1,'',true);
+    
+ALTER TABLE users 
+ADD COLUMN created timestamp without time zone;
 
 create table dicomnodes(
 id bigserial primary key , 

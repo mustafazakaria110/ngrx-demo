@@ -23,7 +23,7 @@ namespace Infrastructure.Repositories
       using (this._connection)
       {
         string sql = @$"INSERT INTO public.users(
-	      username, password, fullname, userrole, imageurl, pacsusername, risuserid, institutionid, isactive, created)
+	      username, password, fullname, userrole, imageurl, pacsusername, risuserid, institutionid, isactive, created, email)
 	      VALUES (@username, 
 			      @password, 
 			      @fullname,
@@ -33,7 +33,8 @@ namespace Infrastructure.Repositories
 	          @risuserid,
 	          @institutionid,
 	          @isactive,
-            @created);";
+            @created,
+            @email);";
         await this._connection.ExecuteAsync(sql,user);
       }
     }
@@ -60,8 +61,7 @@ namespace Infrastructure.Repositories
 	          pacsusername=@pacsusername,
 	          risuserid=@risuserid,
 	          institutionid=@institutionid,
-	          isactive=@isactive,
-            created = @created
+	          isactive=@isactive
 	          WHERE id=@id;";
         try
         {
